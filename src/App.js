@@ -1,12 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from "./components/Navbar";
+import './index.css'
 
 import HomePage from "./screens/Home";
 import ServicePage from "./screens/Services";
 import CareersPage from "./screens/Careers";
 import ContactusPage from "./screens/Contactus";
-import AboutUsPage from "./screens/Aboutus"
+import AboutUsPage from "./screens/Aboutus";
 
 function App() {
   return (

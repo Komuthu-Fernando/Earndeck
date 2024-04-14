@@ -1,11 +1,11 @@
-import homeStyles from './css/HomePage.module.css';
+import homeStyles from '../css/HomePage.module.css';
 import { useRef } from 'react';
-import Card from './Card';
+import Card from '../components/Card';
 import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import logo from './Images/image.png';
+import logo from '../assets/image.png';
 import {
     MDBCard,
     MDBCardBody,

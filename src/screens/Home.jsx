@@ -1,7 +1,7 @@
 import homeStyles from '../css/HomePage.module.css';
 import { useRef } from 'react';
 import Card from '../components/Card';
-import React from 'react';
+import * as React from "react";
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -43,16 +43,16 @@ function HomePage() {
                 <div>
                     {/* <h2 className={homeStyles.heading2} >Our Serivces</h2> */}
                     <div className={homeStyles.cards} ref={cardRef}>
-                        <Card content="Serivce 01" backgroundColor="#F0F0F0" />
-                        <Card content="Serivce 02" backgroundColor="#F0F0F0" />
-                        <Card content="Serivce 03" backgroundColor="#F0F0F0" />
-                        <Card content="Serivce 04" backgroundColor="#F0F0F0" />
+                        <Card content="Service 01" backgroundColor="#F0F0F0" />
+                        <Card content="Service 02" backgroundColor="#F0F0F0" />
+                        <Card content="Service 03" backgroundColor="#F0F0F0" />
+                        <Card content="Service 04" backgroundColor="#F0F0F0" />
                     </div>
                     <div className={homeStyles.cards2}>
-                        <Card content="Serivce 05" backgroundColor="#F0F0F0" />
-                        <Card content="Serivce 06" backgroundColor="#F0F0F0" />
-                        <Card content="Serivce 07" backgroundColor="#F0F0F0" />
-                        <Card content="Serivce 08" backgroundColor="#F0F0F0" />
+                        <Card content="Service 05" backgroundColor="#F0F0F0" />
+                        <Card content="Service 06" backgroundColor="#F0F0F0" />
+                        <Card content="Service 07" backgroundColor="#F0F0F0" />
+                        <Card content="Service 08" backgroundColor="#F0F0F0" />
                     </div>
                 </div>
                 <div className={homeStyles.card3}>

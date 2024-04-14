@@ -6,15 +6,6 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import logo from '../assets/image.png';
-import {
-    MDBCard,
-    MDBCardBody,
-    MDBCol,
-    MDBContainer,
-    MDBIcon,
-    MDBRow,
-    MDBTypography,
-} from "mdb-react-ui-kit";
 
 function HomePage() {
     const cardRef = useRef(null);

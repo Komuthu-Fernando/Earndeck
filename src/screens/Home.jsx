@@ -1,7 +1,7 @@
 import homeStyles from '../css/HomePage.module.css';
 import { useRef } from 'react';
 import Card from '../components/Card';
-import * as React from "react";
+import React from "react";
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';

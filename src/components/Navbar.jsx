@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import styles from '../css/Navbar.module.css'; // Import Navbar styles
 import homeStyles from '../css/HomePage.module.css';
 import logo from '../assets/logo.png';
@@ -19,37 +20,39 @@ function Navbar() {
 			<header className="App-header">
 				<nav className={`${styles.navbar}`}>
 					{/* logo */}
-					<img
-						src={logo}
-						alt="Logo"
-						className={`${styles.logo}`}
-						style={{ width: '60px', height: '50px' }}
-					/>
+					<Link to="/">
+						<img
+							src={logo}
+							alt="Logo"
+							className={`${styles.logo}`}
+							style={{ width: '60px', height: '50px' }}
+						/>
+					</Link>
 					<ul className={`${styles.navMenu} ${isActive ? styles.active : ''}`}>
 						<li onClick={removeActive}>
-							<a href="#careers" className={`${styles.navLink}`}>
+							<Link to="/careers" className={`${styles.navLink}`}>
 								Careers
-							</a>
+							</Link>
 						</li>
 						<li onClick={removeActive}>
-							<a href="#services" className={`${styles.navLink}`}>
+							<Link to="/services" className={`${styles.navLink}`}>
 								Services
-							</a>
+							</Link>
 						</li>
 						<li onClick={removeActive}>
-							<a href="#home" className={`${styles.navLink}`}>
+							<Link to="/" className={`${styles.navLink}`}>
 								Home
-							</a>
+							</Link>
 						</li>
 						<li onClick={removeActive}>
-							<a href="#aboutus" className={`${styles.navLink}`}>
+							<Link to="/aboutus" className={`${styles.navLink}`}>
 								About Us
-							</a>
+							</Link>
 						</li>
 						<li onClick={removeActive}>
-							<a href="#contactus" className={`${styles.navLink}`}>
+							<Link to="/contactus" className={`${styles.navLink}`}>
 								Contact Us
-							</a>
+							</Link>
 						</li>
 					</ul>
 					<div

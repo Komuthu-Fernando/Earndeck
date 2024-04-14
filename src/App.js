@@ -1,18 +1,29 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from "./components/Navbar";
-import HomePage from "./screens/Home";
 
+import HomePage from "./screens/Home";
+import ServicePage from "./screens/Services";
+import CareersPage from "./screens/Careers";
+import ContactusPage from "./screens/Contactus";
+import AboutUsPage from "./screens/Aboutus"
 
 function App() {
-
   return (
-    <div className="App">
-      <header className="App-header">
+    <Router>
+      <div>
         <Navbar />
-        <HomePage />
-      </header>
-    </div>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/services" element={<ServicePage />} />
+          <Route path="/aboutus" element={<AboutUsPage />} />
+          <Route path="/careers" element={<CareersPage />} />
+          <Route path="/contactus" element={<ContactusPage />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
+
 
 export default App;

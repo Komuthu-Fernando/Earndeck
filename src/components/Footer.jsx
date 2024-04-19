@@ -1,9 +1,9 @@
-import { useState } from 'react';
-import homeStyles from '../css/Footer.module.css';
+import React, { useState, useEffect } from 'react';
 
 function Footer() {
-    return (
-        <div></div>
-    );
+
+
+	return <div>This is the footer</div>;
 }
+
 export default Footer;

@@ -23,6 +23,21 @@ a {
   align-items: center;
   gap: 40px;
   min-height: 70px;
+  max-width: 100vw;
+  width: 100%;
+}
+/* Media query for screens smaller than 768px */
+@media (max-width: 767px) {
+  .navbar {
+    padding: 10px; /* Reduce padding on smaller screens */
+  }
+}
+
+/* Media query for screens smaller than 992px */
+@media (max-width: 991px) {
+  .navbar {
+    gap: 20px; /* Reduce gap between elements on smaller screens */
+  }
 }
 
 /* logo  */

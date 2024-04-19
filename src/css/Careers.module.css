@@ -103,3 +103,18 @@ footer {
   line-height: 1.5;
   color: black;
 }
+
+.image {
+  width: 400px;
+  height: 300px;
+  margin-bottom: 30px;
+  margin-left: 40px;
+}
+
+.card3 {
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}

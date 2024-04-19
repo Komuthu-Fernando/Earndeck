@@ -8,6 +8,7 @@ import ServicePage from "./screens/Services";
 import CareersPage from "./screens/Careers";
 import ContactusPage from "./screens/Contactus";
 import AboutUsPage from "./screens/Aboutus";
+import CertificatesPage from "./screens/Certificates";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/aboutus" element={<AboutUsPage />} />
           <Route path="/careers" element={<CareersPage />} />
           <Route path="/contactus" element={<ContactusPage />} />
+          <Route path="/certificates" element={<CertificatesPage />} />
         </Routes>
       </div>
     </Router>

@@ -27,18 +27,9 @@ function Navbar() {
 							className={`${styles.logo}`}
 							style={{ width: '60px', height: '50px' }}
 						/>
+						{/* home about us services careers certificates contact us*/}
 					</Link>
 					<ul className={`${styles.navMenu} ${isActive ? styles.active : ''}`}>
-						<li onClick={removeActive}>
-							<Link to="/careers" className={`${styles.navLink}`}>
-								Careers
-							</Link>
-						</li>
-						<li onClick={removeActive}>
-							<Link to="/services" className={`${styles.navLink}`}>
-								Services
-							</Link>
-						</li>
 						<li onClick={removeActive}>
 							<Link to="/" className={`${styles.navLink}`}>
 								Home
@@ -47,6 +38,21 @@ function Navbar() {
 						<li onClick={removeActive}>
 							<Link to="/aboutus" className={`${styles.navLink}`}>
 								About Us
+							</Link>
+						</li>
+						<li onClick={removeActive}>
+							<Link to="/services" className={`${styles.navLink}`}>
+								Services
+							</Link>
+						</li>
+						<li onClick={removeActive}>
+							<Link to="/careers" className={`${styles.navLink}`}>
+								Careers
+							</Link>
+						</li>
+						<li onClick={removeActive}>
+							<Link to="/certificates" className={`${styles.navLink}`}>
+								Certificates
 							</Link>
 						</li>
 						<li onClick={removeActive}>

@@ -24,6 +24,7 @@ function App() {
           <Route path="/contactus" element={<ContactusPage />} />
           <Route path="/certificates" element={<CertificatesPage />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );

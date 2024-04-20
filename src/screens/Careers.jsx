@@ -47,6 +47,24 @@ function CareersPage() {
 				paragraph This is a sample text paragraph This is a sample<br />
 				text paragraph
 			</p>
+			<h1 className={Styles.heading}>Work with Earndeck Shipping?</h1>
+			<p className={Styles.paragraph}>
+				Interested in working with us? Let us know your expectations and specific needs.<br />
+				Reach out today, and let’s explore how we can collaborate effectively!
+			</p>
+			<div className={Styles.contactForm}>
+				<form>
+					<label htmlFor="name">Name:</label>
+					<input type="text" id="name" name="name" />
+					<label htmlFor="email">Email:</label>
+					<input type="email" id="email" name="email" />
+					<label htmlFor="phone">Phone Number:</label>
+					<input type="tel" id="phone" name="phone" />
+					<label htmlFor="inquiry">Upload your CV:</label>
+					<input type="file" accept=".pdf,.doc,.docx" className={Styles.textarea} />
+					<button type="submit">Submit</button>
+				</form>
+			</div>
 		</div >
 	);
 }

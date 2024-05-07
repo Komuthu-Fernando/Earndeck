@@ -1,91 +1,78 @@
-import React, { useState, useEffect } from 'react';
-import Styles from '../css/Footer.module.css'
-import license from '../assets/license.png'
+import React from "react";
+import '../css/Footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faInstagram, faLinkedin, faTiktok, faYoutube } from '@fortawesome/free-brands-svg-icons';
-import Modal from '../components/Popupmodal';
+import { faFacebook, faInstagram, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import license from '../assets/license.png'
+import { FaPhoneAlt } from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
 
-function Footer() {
-	const [showCompanyPolicyModal, setShowCompanyPolicyModal] = useState(false);
-	const [showTermsModal, setShowTermsModal] = useState(false);
-
-	const openCompanyPolicyModal = () => {
-		setShowCompanyPolicyModal(true);
-	};
-
-	const openTermsModal = () => {
-		setShowTermsModal(true);
-	};
-
-	const closeCompanyPolicyModal = () => {
-		setShowCompanyPolicyModal(false);
-	};
-
-	const closeTermsModal = () => {
-		setShowTermsModal(false);
-	};
-
+const Footer = () => {
 	return (
-		<div>
-			<footer className={Styles.footer}>
-				<div className={Styles.row}>
-					<div className={Styles.column}>
-						<h1>LEADING MARINE<br /> SURVERYING & CONSULTATION<br />IN SRI LANKA</h1><br />
-						<img src={license} className={Styles.img}></img>
+		<div className="footer">
+			<div className="sb__footer section__padding">
+				<div className="sb__footer-links">
+					<div className="sb__footer-links-div">
+						<h4 className="footer_title">LEADING MARINE<br /> SURVERYING & CONSULTATION<br />IN SRI LANKA</h4><br />
+						<img src={license} className="" alt="" />
 					</div>
-					<div className={Styles.column}>
-
+					<div className="sb__footer-links-div footer_mid">
+						<FaLocationDot className="reacticon" />
+						<h4>Address</h4>
+						<span className="span">
+							No. 5/5 Nagahawatha Road Wathtegedara, Maharagama 10280
+						</span>
 					</div>
-					<div className={Styles.column}>
-						<p className={Styles.Follow}>Follow us</p><br />
-						<div className={Styles.row2}>
-							<div>
-								<FontAwesomeIcon icon={faFacebook} size="2x" />
-							</div>
-							<div>
-								<FontAwesomeIcon icon={faInstagram} size="2x" />
-							</div>
-							<div>
-								<FontAwesomeIcon icon={faLinkedin} size="2x" />
-							</div>
-							{/* <div>
-								<FontAwesomeIcon icon={faTiktok} size="2x" />
-							</div> */}
-							<div>
-								<FontAwesomeIcon icon={faYoutube} size="2x" />
-							</div>
+					<div className="sb__footer-links-div footer_mid">
+						<FaPhoneAlt className="reacticon" />
+						<h4>Phone</h4>
+						<span className="span">
+							+94 77 308 1208
+						</span>
+					</div>
+					<div className="sb__footer-links-div footer_mid">
+						<MdEmail className="reacticon" />
+						<h4>Email</h4>
+						<span className="span">
+							earndeckshipping@gmail.com
+						</span>
+					</div>
+					<div className="sb__footer-links-div">
+						<h4>Follow us</h4>
+						<div className="socialmedia">
+							<p>
+								<a href="/employer">
+									<FontAwesomeIcon icon={faFacebook} className="socialmedia_icon" />
+								</a>
+							</p>
+							<p>
+								<a href="/employer">
+									<FontAwesomeIcon icon={faInstagram} className="socialmedia_icon" />
+								</a>
+							</p>
+							<p>
+								<a href="/employer">
+									<FontAwesomeIcon icon={faLinkedin} className="socialmedia_icon" />
+								</a>
+							</p>
+							<p>
+								<a href="/employer">
+									<FontAwesomeIcon icon={faYoutube} className="socialmedia_icon" />
+								</a>
+							</p>
 						</div>
-						<div className={Styles.policy}>
-							<div>
-								<span style={{ cursor: 'pointer' }} onClick={openCompanyPolicyModal}>Company Policy</span>
-								{showCompanyPolicyModal && (
-									<Modal
-										title="Company Policy"
-										content="This is the company policy content."
-										onClose={closeCompanyPolicyModal}
-									/>
-								)}
-							</div>
-							<div>
-								<span style={{ cursor: 'pointer' }} onClick={openTermsModal}>Terms & Conditions</span>
-								{showTermsModal && (
-									<Modal
-										title="Terms & Conditions"
-										content="These are the terms and conditions."
-										onClose={closeTermsModal}
-									/>
-								)}
-							</div>
-						</div>
 					</div>
-				</div><br />
-				<div className={Styles.row}>
-					<p className={Styles.cp}>Copyright 2024, designed by Sparkhaus</p>
 				</div>
-			</footer >
+			</div>
+			<div className="sb__footer-below">
+				<div className="sb__footer-copyright">
+					<span className="copyright">
+						@{new Date().getFullYear()} <b>Sparkhaus</b>. All Right Reserved.<br />
+					</span><br />
+				</div>
+			</div>
 
-		</div >
-	);
+		</div>
+	)
 }
-
 export default Footer;

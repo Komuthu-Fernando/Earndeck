@@ -1,11 +1,4 @@
-.background {
-  background-image: url("/src/assets/homeimg.png");
-  background-size: cover;
-  background-position: center;
-  width: 100vw;
-  height: 100vh;
-}
-
+/* Default styles */
 .content {
   padding: 20px;
 }
@@ -130,4 +123,93 @@ button[type="submit"] {
   margin-top: 100px;
   width: 100%;
   height: 500px;
+}
+
+/* Media Queries */
+
+/* For screens smaller than 768px */
+@media (max-width: 767px) {
+  .cardscontainer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    width: 250px;
+    height: 220px;
+    margin-bottom: 10px;
+  }
+
+  .contactContainer {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .contactForm {
+    width: 100%;
+    margin-left: 0;
+    padding-right: 5%;
+  }
+
+  .mapLocator {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .mapLocator iframe {
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+    margin-right: 0;
+  }
+
+  .paragraph {
+    margin-bottom: 0px;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+    width: 100%;
+  }
+
+  button[type="submit"] {
+    width: 100%;
+    margin-left: 2%;
+    margin-bottom: 3%;
+  }
+
+  .formHeading {
+    margin-left: 5%;
+  }
+
+  .icon {
+    margin-top: 10px;
+  }
+}
+
+/* For screens smaller than 480px */
+@media (max-width: 479px) {
+  .heading {
+    font-size: 24px;
+  }
+
+  .paragraph {
+    font-size: 16px;
+  }
+
+  .card {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  .text {
+    font-size: 12px;
+  }
+
+  .formHeading {
+    font-size: 20px;
+  }
 }

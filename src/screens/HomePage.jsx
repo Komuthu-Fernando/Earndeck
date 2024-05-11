@@ -21,6 +21,16 @@ const HomePage = () => {
 		autoplaySpeed: 3000,
 	};
 
+	const settings2 = {
+		dots: true,
+		infinite: true,
+		speed: 500,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 3000,
+	};
+
 	return (
 		<div>
 			<div className="home">
@@ -28,9 +38,23 @@ const HomePage = () => {
 				<div className="landing">
 					<div className="landing-container">
 						<div className="landing-text">
-							<h1 className="landing-title">Your One Stop <br /> Surveying Solutions</h1>
-							<p className="landing-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam congue orci ac <br />diam dapibus, ut malesuada nisl aliquet. Fusce non odio vitae sapien eleifend<br />tristique vitae vel purus.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />Nullam congue orci ac <br /></p>
-							<button className="button"><span>Discover Now</span></button>
+							<h1 className="landing-title">
+								Your One Stop <br /> Surveying Solutions
+							</h1>
+							<p className="landing-paragraph">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+								congue orci ac <br />
+								diam dapibus, ut malesuada nisl aliquet. Fusce non odio vitae
+								sapien eleifend
+								<br />
+								tristique vitae vel purus.Lorem ipsum dolor sit amet,
+								consectetur adipiscing elit.
+								<br />
+								Nullam congue orci ac <br />
+							</p>
+							<button className="button">
+								<span>Discover Now</span>
+							</button>
 						</div>
 						<div className="landing-image">
 							<img src={LandingImage} alt="landingimg" />
@@ -108,11 +132,41 @@ const HomePage = () => {
 					</div>
 				</div>
 
-				{/* Testimonials Section */}
+				{/* Testimonials Section
 				<div className="testimonial-section">
 					<h1>Testimonials</h1>
 					<h2 >What clients say</h2>
 					<TestimonialSlider />
+				</div> */}
+
+				<div className="testimonial-section">
+					<h2>OUR CLIENTS</h2>
+					<div className="slider-div">
+						<center>
+							<Slider {...settings2}>
+								<div className="testimonial-card">
+									<div className="testimonial-top">
+										<h3 className="testimonial-name">Hirusha</h3>
+										<div
+											className="testimonial-image"
+											style={{ backgroundImage: `url(${partner1})` }}
+										></div>
+									</div>
+									<div className="testimonial-description">dvdfvvdfvvvfv</div>
+								</div>
+								<div className="testimonial-card">
+									<div className="testimonial-top">
+										<h3 className="testimonial-name">teddy</h3>
+										<div
+											className="testimonial-image"
+											style={{ backgroundImage: `url(${partner1})` }}
+										></div>
+									</div>
+									<div className="testimonial-description">dvdfvvdfvvvfv</div>
+								</div>
+							</Slider>
+						</center>
+					</div>
 				</div>
 			</div>
 		</div>

@@ -107,11 +107,11 @@ button[type="submit"] {
 }
 
 .mapLocator {
-  width: 45%;
+  margin-bottom: 5%;
 }
 
 .mapLocator iframe {
-  margin-top: 120px;
+  margin-top: 5rem;
   width: 600px;
   height: 500px;
   border: none;

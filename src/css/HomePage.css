@@ -252,3 +252,13 @@ h4 {
     margin-bottom: 0;
   }
 }
+
+@media (min-width: 769px) {
+  .landing-text {
+    top: 25%;
+    left: 2rem;
+    transform: translateY(-50%);
+    z-index: 1;
+    text-align: left;
+  }
+}

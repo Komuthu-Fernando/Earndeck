@@ -140,10 +140,8 @@
 .slider-div {
   overflow: hidden;
   margin-top: 2rem;
-  margin-left: 8rem;
-  margin-right: 0rem;
-  justify-content: center;
-  align-items: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .partner-logo {

@@ -7,6 +7,7 @@ import HomePage from "./screens/HomePage";
 // import ServicePage from "./screens/Services";
 // import NewsPage from "./screens/News";
 import ContactusPage from "./screens/Contactus";
+import CareersPage from "./screens/Careers";
 // import AboutUsPage from "./screens/Aboutus"
 
 
@@ -22,6 +23,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           {/* <Route path="/aboutus" element={<AboutUsPage />} />*/}
           <Route path="/contactus" element={<ContactusPage />} />
+          <Route path="/careers" element={<CareersPage />} />
         </Routes>
         <Footer />
       </div>

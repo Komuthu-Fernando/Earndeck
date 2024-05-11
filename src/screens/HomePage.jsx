@@ -89,20 +89,22 @@ const HomePage = () => {
 				<div className="partners">
 					<h2>OUR CLIENTS</h2>
 					<div className="slider-div">
-						<Slider {...settings}>
-							<div className="partner-logo">
-								<img src={partner1} alt="Partner 1" />
-							</div>
-							<div className="partner-logo">
-								<img src={partner1} alt="Partner 2" />
-							</div>
-							<div className="partner-logo">
-								<img src={partner1} alt="Partner 2" />
-							</div>
-							<div className="partner-logo">
-								<img src={partner1} alt="Partner 2" />
-							</div>
-						</Slider>
+						<center>
+							<Slider {...settings}>
+								<div className="partner-logo">
+									<img src={partner1} alt="Partner 1" />
+								</div>
+								<div className="partner-logo">
+									<img src={partner1} alt="Partner 2" />
+								</div>
+								<div className="partner-logo">
+									<img src={partner1} alt="Partner 2" />
+								</div>
+								<div className="partner-logo">
+									<img src={partner1} alt="Partner 2" />
+								</div>
+							</Slider>
+						</center>
 					</div>
 				</div>
 

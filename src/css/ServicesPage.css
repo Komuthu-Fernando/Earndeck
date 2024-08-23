@@ -1,0 +1,49 @@
+.service {
+    margin: 5rem;
+}
+
+.service h2 {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 43px;
+    text-align: center;
+}
+
+.service-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.service-card {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.left-card {
+    flex-direction: row;
+}
+
+.right-card {
+    justify-content: right;
+    text-align: right;
+}
+
+.service-image {
+    height: 50vh;
+    max-width: 18vw;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.service-card h3 {
+    color: #073859;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.service-text {
+    max-width: 60%;
+}

@@ -1,0 +1,122 @@
+.container {
+  margin-top: 4rem;
+  overflow: hidden;
+  font-size: 1rem;
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 10rem;
+  margin-left: 4rem;
+  margin-bottom: 5rem;
+}
+
+.first-section h2 {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 43px;
+  text-align: left;
+}
+
+.first-section p {
+  text-align: left;
+}
+
+.second-section img {
+  width: 40vw;
+  border-radius: 30px 0px 0px 30px;
+}
+
+.content-section {
+  margin: 5rem;
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+
+.content-section h2{
+  font-weight: bold;
+  font-size: 2.4rem;
+  margin-bottom: 43px;
+}
+
+.content-section p {
+  font-size: 1.2rem;
+}
+.vision {
+  margin-bottom: 5rem;
+}
+
+.team-section {
+  margin-bottom: 5rem;
+}
+
+.team-section h2{
+  font-weight: bold;
+  font-size: 2.4rem;
+  margin-bottom: 5rem;
+}
+
+.team-member {
+  display: flex;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.member {
+  width: calc(33.33% - 2rem);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.member h3 {
+  margin: 0.5rem;
+}
+
+.member h4 {
+  color: #073859;
+}
+
+.member img {
+  width: 15vw;
+  height: auto;
+  border-radius: 50%; 
+}
+
+.values-section {
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-bottom: 5rem;
+}
+
+.values-section h2{
+  font-weight: bold;
+  font-size: 2.4rem;
+  margin-bottom: 5rem;
+}
+
+.values-container {
+  display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.value {
+  /* flex-basis: calc(30% - 1rem); */
+	/* height: 30vh; */
+  width: 20vw;
+  min-height: 40vh;
+	margin: 1rem;
+	margin-bottom: 2rem;
+	background-color: #F0F0F0;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  text-align: center;
+  color: #073859;
+  
+}

@@ -1,0 +1,109 @@
+.background {
+  background-image: url("/src/assets/homeimg.png");
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.content {
+  position: relative;
+  top: 60px;
+  color: white;
+  margin-bottom: 5rem;
+}
+
+.heading {
+  font-weight: bold;
+  font-size: 30px;
+  color: black;
+  margin-bottom: 43px;
+  text-align: center;
+}
+
+.paragraph {
+  margin-bottom: 60px;
+  font-size: 18px;
+  color: black;
+  text-align: center;
+}
+
+button[type="submit"] {
+  background-color: #08385a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.image {
+  width: 400px;
+  height: 300px;
+  margin-bottom: 30px;
+  margin-left: 40px;
+}
+
+.card3 {
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.text {
+  font-size: 14px;
+  line-height: 1.5;
+  color: black;
+}
+
+.contactForm {
+  margin-bottom: 20px;
+  width: 30vw;
+  padding: 3rem;
+  border-radius: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #F0F0F0;
+}
+
+.formHeading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-bottom: 20px;
+  color: black;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="file"] {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+button[type="submit"] {
+  background-color: #08385a;
+  width: 50%;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 60px;
+  /* margin-left: 35px; */
+}

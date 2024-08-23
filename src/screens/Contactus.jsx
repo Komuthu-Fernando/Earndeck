@@ -45,7 +45,7 @@ function ContactusPage() {
 				{/* Contact Form and Map Locator */}
 				<div className="contactContainer">
 					{/* Contact Form */}
-					<div className="contactForm">
+					<div className="contactForm-contact">
 						<h2 className="formHeading">Get in Touch</h2>
 						<form>
 							<label htmlFor="name">Name:</label>
@@ -56,7 +56,7 @@ function ContactusPage() {
 							<input type="tel" id="phone" name="phone" />
 							<label htmlFor="inquiry">Inquiry/Message:</label>
 							<textarea id="inquiry" name="inquiry" rows="4" cols="50"></textarea>
-							<button type="submit">Submit</button>
+							<center><button type="submit">Submit</button></center>
 						</form>
 					</div>
 					{/* Google Map Locator */}

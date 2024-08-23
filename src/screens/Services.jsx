@@ -1,0 +1,64 @@
+import React, { useEffect, useState } from 'react';
+import { client } from '../constraint/contentful';
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import '../css/ServicesPage.css';
+
+const ServicesPage = () => {
+  const [services, setServices] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await client.getEntries({
+          content_type: 'service',
+        });
+        setServices(response.items);
+      } catch (error) {
+        console.error('Error fetching data from Contentful:', error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  return (
+    <div className="service">
+      <h2>Our Services</h2>
+      <div className="service-container">
+        {services.map((service, index) => (
+          <div key={index}>
+            <div className={`service-card ${index % 2 === 0 ? 'left-card' : 'right-card'}`}>
+              {index % 2 === 0 ? (
+                <>
+                  <img
+                    src={service.fields.image.fields.file.url}
+                    alt={service.fields.title}
+                    className="service-image"
+                  />
+                  <div className="service-text">
+                    <h3>{service.fields.title}</h3>
+                    <p>{documentToReactComponents(service.fields.description)}</p>
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div className="service-text">
+                    <h3>{service.fields.title}</h3>
+                    <p>{documentToReactComponents(service.fields.description)}</p>
+                  </div>
+                  <img
+                    src={service.fields.image.fields.file.url}
+                    alt={service.fields.title}
+                    className="service-image"
+                  />
+                </>
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default ServicesPage;

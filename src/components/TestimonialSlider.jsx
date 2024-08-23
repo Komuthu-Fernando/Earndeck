@@ -2,11 +2,11 @@ import React from 'react';
 import TestimonialCard from '../components/TestimonialCard';
 import '../css/TestimonialSlider.css';
 import OwnerImage from '../assets/owner-image.jpg';
-import Slider from 'react-slick';
 
 function TestimonialSlider() {
     // Assuming testimonial data is available in an array
     const testimonials = [
+        { name: 'John Doe', image: OwnerImage, description: 'Testimonial description goes here.' },
         { name: 'John Doe', image: OwnerImage, description: 'Testimonial description goes here.' },
         { name: 'John Doe', image: OwnerImage, description: 'Testimonial description goes here.' },
         { name: 'John Doe', image: OwnerImage, description: 'Testimonial description goes here.' },

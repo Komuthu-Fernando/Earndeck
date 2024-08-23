@@ -1,0 +1,44 @@
+.certificate-container {
+    margin: 5rem;
+}
+
+.certificate-container h2 {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 43px;
+    text-align: center;
+}
+
+.certificate-container h3 {
+    color: #073859;
+}
+
+.certificate-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.certificate {
+    display: flex;
+    width: 40vw;
+    gap: 2rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
+    border-radius: 1rem;
+    margin-bottom: 4rem;
+}
+
+.certificate img {
+    width: 20vw;
+    max-height: 35vh;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.certificate h4 {
+    text-align: left;
+    
+}
+
+.certificate-text {
+    place-content: center;
+}

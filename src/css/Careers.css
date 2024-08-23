@@ -10,6 +10,7 @@
   position: relative;
   top: 60px;
   color: white;
+  margin-bottom: 5rem;
 }
 
 .heading {
@@ -64,9 +65,12 @@ body {
 
 .contactForm {
   margin-bottom: 20px;
-  width: 450px;
+  width: 30vw;
+  padding: 3rem;
+  border-radius: 1rem;
   margin-left: auto;
   margin-right: auto;
+  background-color: #F0F0F0;
 }
 
 .formHeading {
@@ -84,7 +88,7 @@ input[type="text"],
 input[type="email"],
 input[type="tel"],
 input[type="file"] {
-  width: 100%;
+  width: 90%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -93,6 +97,7 @@ input[type="file"] {
 
 button[type="submit"] {
   background-color: #08385a;
+  width: 50%;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -100,5 +105,5 @@ button[type="submit"] {
   border-radius: 5px;
   cursor: pointer;
   margin-bottom: 60px;
-  margin-left: 35px;
+  /* margin-left: 35px; */
 }

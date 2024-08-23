@@ -110,7 +110,7 @@ const HomePage = () => {
 				</div>
 
 				{/* Partners Section */}
-				<div className="partners">
+				{/* <div className="partners">
 					<h2>OUR CLIENTS</h2>
 					<div className="slider-div">
 						<center>
@@ -130,7 +130,7 @@ const HomePage = () => {
 							</Slider>
 						</center>
 					</div>
-				</div>
+				</div> */}
 
 				{/* Testimonials Section
 				<div className="testimonial-section">
@@ -139,7 +139,7 @@ const HomePage = () => {
 					<TestimonialSlider />
 				</div> */}
 
-				<div className="testimonial-section">
+				{/* <div className="testimonial-section">
 					<h2>OUR CLIENTS</h2>
 					<div className="slider-div">
 						<center>
@@ -167,7 +167,7 @@ const HomePage = () => {
 							</Slider>
 						</center>
 					</div>
-				</div>
+				</div> */}
 			</div>
 		</div>
 	);

@@ -49,7 +49,7 @@ function CareersPage() {
 			<h1 className="heading">Work with Earndeck Shipping?</h1>
 			<p className="paragraph">
 				Interested in working with us? Let us know your expectations and specific needs.<br />
-				Reach out today, and let’s explore how we can collaborate effectively!
+				Reach out today, and let's explore how we can collaborate effectively!
 			</p>
 			<div className="contactForm">
 				<form>

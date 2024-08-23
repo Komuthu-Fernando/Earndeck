@@ -100,8 +100,11 @@
 }
 
 .services-section h2 {
-	color: #08385a;
+	/* color: #08385a; */
 	margin-bottom: 3rem;
+	font-weight: bold;
+	font-size: 30px;
+	text-align: center;
 }
 
 .service-cards-home {
@@ -164,6 +167,10 @@
 	padding-top: 1rem;
 	padding-bottom: 1rem;
 	background-color: #f0f0f0;
+}
+
+.testimonial-card {
+	width: 100px;
 }
 
 .testimonial-section h1,

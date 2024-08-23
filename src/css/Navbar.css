@@ -5,6 +5,9 @@
   align-items: center;
   padding: 10px 20px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  top: 0;
+  position: sticky;
+  z-index: 1;
 }
 
 .logo img {
@@ -36,7 +39,7 @@
 }
 
 .menu-items li a:hover {
-  color: #007bff;
+  color: #76a6d8;
 }
 
 @media (max-width: 768px) {

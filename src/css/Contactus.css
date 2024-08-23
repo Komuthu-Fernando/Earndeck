@@ -60,11 +60,13 @@
   align-items: flex-start;
 }
 
-.contactForm {
+.contactForm-contact {
   width: 45%;
   margin-top: 60px;
   margin-left: 50px;
+  margin-bottom: 2rem;
 }
+
 
 .formHeading {
   font-size: 24px;
@@ -72,7 +74,7 @@
   margin-bottom: 20px;
 }
 
-form {
+.contactForm-contact form {
   display: flex;
   flex-direction: column;
 }
@@ -81,9 +83,7 @@ label {
   margin-bottom: 20px;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
+.contactForm-contact input[type="text"],
 textarea {
   width: 100%;
   padding: 10px;
@@ -92,11 +92,30 @@ textarea {
   margin-bottom: 20px;
 }
 
+.contactForm-contact input[type="email"],
 textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.contactForm-contact input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+
+.contactForm-contact textarea {
   resize: vertical;
 }
 
-button[type="submit"] {
+.contactForm-contact button[type="submit"] {
   background-color: #08385a;
   color: white;
   border: none;
@@ -104,6 +123,8 @@ button[type="submit"] {
   font-size: 18px;
   border-radius: 5px;
   cursor: pointer;
+  width: 60%;
+
 }
 
 .mapLocator {

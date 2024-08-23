@@ -1,0 +1,24 @@
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #1a5c89;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 1;
+  }
+  
+  .floating-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .floating-button:active {
+    background-color: #003f7f;
+  }
+  

@@ -1,9 +1,14 @@
+import React, {useEffect} from 'react';
 import '../css/Contactus.css';
 import { FaMapMarkerAlt, FaPhone, FaEnvelope } from 'react-icons/fa';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 function ContactusPage() {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
+	
 	return (
 		<div>
 			<div className="content">

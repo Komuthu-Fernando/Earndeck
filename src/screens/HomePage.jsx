@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Slider from 'react-slick';
 import '../css/HomePage.css';
 import 'slick-carousel/slick/slick.css';
@@ -30,6 +30,10 @@ const HomePage = () => {
 		autoplay: true,
 		autoplaySpeed: 3000,
 	};
+
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 
 	return (
 		<div>

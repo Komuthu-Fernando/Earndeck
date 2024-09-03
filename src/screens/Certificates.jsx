@@ -33,6 +33,7 @@ const CertificatePage = () => {
 
 		fetchCertificates();
 		fetchLicenses();
+		window.scrollTo(0, 0);
 	}, []);
 
 	return (

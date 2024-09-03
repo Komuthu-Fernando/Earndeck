@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import '../css/Aboutus.css';
 import owner from '../assets/owner-image.jpg';
 import ship from '../assets/homeimg.png';
@@ -11,6 +11,10 @@ const AboutusPage = () => {
 		{ name: "Emily Davis", position: "Marketing Specialist", photo: "https://via.placeholder.com/150" },
 		{ name: "Chris Brown", position: "Data Scientist", photo: "https://via.placeholder.com/150" },
 	  ];
+
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 
 	return (
 		<div className="container">

@@ -1,6 +1,6 @@
 /* Default styles */
 .content {
-  padding: 20px;
+  margin: 5rem
 }
 
 .heading {
@@ -146,91 +146,94 @@ textarea {
   height: 500px;
 }
 
-/* Media Queries */
 
-/* For screens smaller than 768px */
-@media (max-width: 767px) {
+
+@media (max-width: 479px) {
   .cardscontainer {
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .card {
-    width: 250px;
-    height: 220px;
-    margin-bottom: 10px;
+    width: 90%;
+    height: auto;
   }
 
   .contactContainer {
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
   }
 
-  .contactForm {
-    width: 100%;
-    margin-left: 0;
-    padding-right: 5%;
-  }
-
-  .mapLocator {
-    width: 100%;
-    margin-right: 0;
-  }
-
+  .contactForm-contact,
   .mapLocator iframe {
     width: 100%;
-    height: 300px;
-    margin-top: 20px;
-    margin-right: 0;
-  }
-
-  .paragraph {
-    margin-bottom: 0px;
-    font-size: 18px;
-    color: black;
-    text-align: center;
-    width: 100%;
-  }
-
-  button[type="submit"] {
-    width: 100%;
-    margin-left: 2%;
-    margin-bottom: 3%;
-  }
-
-  .formHeading {
-    margin-left: 5%;
-  }
-
-  .icon {
-    margin-top: 10px;
+    margin: 0;
   }
 }
 
-/* For screens smaller than 480px */
-@media (max-width: 479px) {
-  .heading {
-    font-size: 24px;
-  }
-
-  .paragraph {
-    font-size: 16px;
+@media (min-width: 480px) and (max-width: 767px) {
+  .cardscontainer {
+    flex-direction: column;
+    align-items: center;
   }
 
   .card {
-    padding: 10px;
+    width: 80%;
+    height: auto;
   }
 
-  .title {
-    font-size: 16px;
+  .contactContainer {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .text {
-    font-size: 12px;
+  .contactForm-contact {
+    width: 80%;
+    margin: 0;
   }
 
-  .formHeading {
-    font-size: 20px;
+  .mapLocator iframe {
+    width: 80vw;
+    margin: 0;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .cardscontainer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .card {
+    width: 45%;
+  }
+
+  .contactForm-contact {
+    width: 45%;
+    margin: 0;
+  }
+
+  .mapLocator iframe {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+/* For large devices (desktops, 992px to 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .cardscontainer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .card {
+    width: 40%;
+  }
+
+  .contactForm-contact,
+  .mapLocator iframe {
+    width: 45%;
+    margin: 0;
   }
 }

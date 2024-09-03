@@ -13,6 +13,7 @@
 }
 
 .first-section h2 {
+  margin-top: 0;
   font-weight: bold;
   font-size: 30px;
   margin-bottom: 43px;
@@ -37,6 +38,7 @@
 .content-section h2{
   font-weight: bold;
   font-size: 2.4rem;
+  text-align: center;
   margin-bottom: 43px;
 }
 
@@ -55,6 +57,7 @@
   font-weight: bold;
   font-size: 2.4rem;
   margin-bottom: 5rem;
+  text-align: center;
 }
 
 .team-member {
@@ -95,6 +98,7 @@
   font-weight: bold;
   font-size: 2.4rem;
   margin-bottom: 5rem;
+  text-align: center;
 }
 
 .values-container {
@@ -106,7 +110,7 @@
 .value {
   /* flex-basis: calc(30% - 1rem); */
 	/* height: 30vh; */
-  width: 20vw;
+  width: 22vw;
   min-height: 40vh;
 	margin: 1rem;
 	margin-bottom: 2rem;
@@ -119,4 +123,161 @@
   text-align: center;
   color: #073859;
   
+}
+
+@media (max-width: 479px) {
+  .header-section {
+    gap: 2rem;
+    margin-left: 2rem;
+  }
+
+  .first-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .second-section img {
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  .content-section {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
+  .content-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .content-section p {
+    font-size: 1rem;
+  }
+
+  .team-section {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
+  .team-section h2 {
+    font-size: 1.5rem; 
+  }
+
+  .member {
+    width: calc(100% - 2rem);
+  }
+
+  .member h3 {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .member h4 {
+    font-size: 0.8rem;
+  }
+
+  .member img {
+    width: 40vw;
+  }
+
+  .values-section h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .value {
+    width: 40vw;
+    padding: 1rem;
+  }
+
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .second-section img {
+    height: 60vh;
+    object-fit: cover;
+  }
+
+  .content-section h2 {
+    font-size: 2rem;
+  }
+
+  .content-section p {
+    font-size: 1rem;
+  }
+
+  .team-section {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
+  .team-section h2 {
+    font-size: 2rem; 
+  }
+
+  .member {
+    width: calc(50% - 2rem);
+  }
+
+  .member h3 {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+  }
+
+  .member h4 {
+    font-size: 0.9rem;
+  }
+
+  .member img {
+    width: 25vw;
+  }
+
+  .values-section h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .value {
+    width: 30vw;
+    padding: 1rem;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .second-section img {
+    height: 40vh;
+    object-fit: cover;
+  }
+
+  .content-section h2 {
+    font-size: 2rem;
+  }
+
+  .team-section {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
+  .team-section h2 {
+    font-size: 2rem; 
+  }
+
+  .member img {
+    width: 20vw;
+  }
+
+  .values-section h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .value {
+    width: 20vw;
+    padding: 1rem;
+  }
+  
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
 }

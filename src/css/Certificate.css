@@ -32,6 +32,7 @@
     width: 20vw;
     max-height: 35vh;
     border-radius: 1rem 0 0 1rem;
+    object-fit: cover;
 }
 
 .certificate h4 {
@@ -41,4 +42,89 @@
 
 .certificate-text {
     place-content: center;
+}
+
+@media (max-width: 479px) {
+    .certificate-container {
+        margin: 2rem;
+    }
+
+    .certificate {
+        flex-direction: column;
+        width: 80vw;
+        gap: 1rem;
+    }
+
+    .certificate img {
+        width: 100%;
+        max-height: unset;
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    .certificate h4 {
+        text-align: center;
+    }
+
+    .certificate-text {
+        text-align: center;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    .certificate-container {
+        margin: 3rem;
+    }
+
+    .certificate {
+        flex-direction: column;
+        width: 70vw;
+        gap: 1rem;
+    }
+
+    .certificate img {
+        width: 100%;
+        max-height: unset;
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    .certificate h4 {
+        text-align: center;
+    }
+
+    .certificate-text {
+        text-align: center;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .certificate-container {
+        margin: 4rem;
+    }
+
+    .certificate {
+        width: 45vw;
+        gap: 1.5rem;
+    }
+
+    .certificate img {
+        width: 22vw;
+        max-height: 30vh;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .certificate-container {
+        margin: 5rem;
+    }
+
+    .certificate {
+        width: 35vw;
+        gap: 2rem;
+    }
+
+    .certificate img {
+        width: 18vw;
+        max-height: 28vh;
+    }
 }

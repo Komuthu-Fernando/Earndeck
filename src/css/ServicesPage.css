@@ -1,49 +1,97 @@
 .service {
-    margin: 5rem;
+	margin: 5rem;
+    overflow: hidden;
 }
 
 .service h2 {
-    font-weight: bold;
-    font-size: 30px;
-    margin-bottom: 43px;
-    text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+	margin-bottom: 43px;
+	text-align: center;
 }
 
 .service-container {
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
+	display: flex;
+	flex-direction: column;
+	gap: 5rem;
 }
 
 .service-card {
-    display: flex;
-    gap: 2rem;
-    margin-bottom: 1rem;
-    align-items: center;
+	display: flex;
+	gap: 2rem;
+	margin-bottom: 1rem;
+	align-items: center;
 }
 
 .left-card {
-    flex-direction: row;
+	flex-direction: row;
 }
 
 .right-card {
-    justify-content: right;
-    text-align: right;
+	justify-content: right;
+	text-align: right;
 }
 
 .service-image {
-    height: 50vh;
-    max-width: 18vw;
-    object-fit: cover;
-    border-radius: 1rem;
+	height: 50vh;
+	max-width: 18vw;
+	object-fit: cover;
+	border-radius: 1rem;
 }
 
 .service-card h3 {
-    color: #073859;
-    font-weight: bold;
-    margin-top: 0;
+	color: #073859;
+	font-weight: bold;
+	margin-top: 0;
 }
 
 .service-text {
-    max-width: 60%;
+	max-width: 60%;
+}
+
+@media (max-width: 479px) {
+	.left-card {
+		flex-direction: column;
+	}
+
+	.right-card {
+		flex-direction: column;
+	}
+
+	.right-card .service-text {
+		order: 2;
+	}
+
+	.right-card .service-image {
+		order: 1;
+	}
+
+	.service-image {
+		height: 30vh;
+		min-width: 60vw;
+	}
+
+    .service-card h3 {
+        text-align: center;
+    }
+
+	.service-text {
+		max-width: 90%;
+        text-align: left;
+	}
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    .service-image {
+		min-width: 30vw;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .service-image {
+		min-width: 30vw;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
 }

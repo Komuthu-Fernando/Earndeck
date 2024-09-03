@@ -1,7 +1,7 @@
 .background {
-  background-image: url("/src/assets/homeimg.png");
+  /* background-image: url("/src/assets/homeimg.png");
   background-size: cover;
-  background-position: center;
+  background-position: center; */
   width: 100vw;
   height: 100vh;
 }
@@ -28,7 +28,7 @@
   text-align: center;
 }
 
-button[type="submit"] {
+.contactForm button[type="submit"] {
   background-color: #08385a;
   color: white;
   border: none;
@@ -36,10 +36,6 @@ button[type="submit"] {
   font-size: 18px;
   border-radius: 5px;
   cursor: pointer;
-}
-
-body {
-  overflow-x: hidden;
 }
 
 .image {
@@ -106,4 +102,67 @@ button[type="submit"] {
   cursor: pointer;
   margin-bottom: 60px;
   /* margin-left: 35px; */
+}
+
+
+@media (max-width: 479px) {
+  .image {
+    width: 100%; 
+    object-fit: cover; 
+    margin-left: 0; 
+  }
+
+  .contactForm {
+    width: 90%; 
+    padding: 1rem; 
+  }
+
+  .contactForm button[type="submit"] {
+    width: 90%;
+    align-items: center;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .image {
+    width: 100%; 
+    object-fit: cover; 
+  }
+
+  .contactForm {
+    width: 80%; /* Adjust form width */
+  }
+
+  .contactForm button[type="submit"] {
+    margin-left: 0;
+  }
+} 
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .image {
+    width: 90%; 
+    object-fit: cover; 
+    
+  }
+
+  .contactForm {
+    width: 60%; 
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .card3 {
+    overflow: hidden;
+  }
+  
+  .image {
+    width: 90%; 
+    object-fit: cover;
+
+  }
+
+  .contactForm {
+    width: 50%; 
+  }
 }

@@ -59,17 +59,13 @@ a {
 
 .footer h4 {
   color: white;
+  text-align: center;
 }
 
 .span {
   color: white;
   text-align: center;
   font-size: small;
-}
-
-.footer_title {
-  text-align: left;
-  color: white;
 }
 
 .copyright {
@@ -84,6 +80,11 @@ a {
 .footer_mid {
   margin-top: 1.5rem;
 }
+
+/* .sb__footer-links h4{
+  text-align: left;
+} */
+
 
 @media screen and (max-width: 900px) {
   .socialmedia_icon {

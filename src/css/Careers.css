@@ -1,21 +1,12 @@
-.background {
-  /* background-image: url("/src/assets/homeimg.png");
-  background-size: cover;
-  background-position: center; */
-  width: 100vw;
-  height: 100vh;
-}
-
 .content {
   position: relative;
-  top: 60px;
   color: white;
   margin-bottom: 5rem;
 }
 
 .heading {
   font-weight: bold;
-  font-size: 30px;
+  font-size: 2rem;
   color: black;
   margin-bottom: 43px;
   text-align: center;
@@ -89,6 +80,7 @@ input[type="file"] {
   border: 1px solid #ccc;
   border-radius: 5px;
   margin-bottom: 20px;
+  color: #08385a;
 }
 
 button[type="submit"] {
@@ -100,8 +92,67 @@ button[type="submit"] {
   font-size: 18px;
   border-radius: 5px;
   cursor: pointer;
-  margin-bottom: 60px;
+  margin-bottom: 1rem;
   /* margin-left: 35px; */
+}
+
+/* Progress Bar */
+.progress-bar {
+  width: 100%;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  margin-top: 15px;
+  overflow: hidden;
+  height: 20px;
+  margin-bottom: 20px;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: #4caf50; /* Green */
+  transition: width 0.4s ease;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  color: black;
+}
+
+.modal-content h2 {
+  margin-bottom: 15px;
+}
+
+.modal-content button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.modal-content button:hover {
+  background-color: #45a049;
 }
 
 

@@ -1,35 +1,36 @@
 import React, {useEffect} from 'react';
-import Slider from 'react-slick';
+
 import '../css/HomePage.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import TestimonialSlider from '../components/TestimonialSlider';
+
+
 
 import LandingImage from '../assets/homeimg.png';
-import partner1 from '../assets/image.png';
+
 
 import service_icon from '../assets/facebook.png';
 
 const HomePage = () => {
-	const settings = {
-		dots: true,
-		infinite: true,
-		speed: 500,
-		slidesToShow: 4,
-		slidesToScroll: 1,
-		autoplay: true,
-		autoplaySpeed: 3000,
-	};
+	// const settings = {
+	// 	dots: true,
+	// 	infinite: true,
+	// 	speed: 500,
+	// 	slidesToShow: 4,
+	// 	slidesToScroll: 1,
+	// 	autoplay: true,
+	// 	autoplaySpeed: 3000,
+	// };
 
-	const settings2 = {
-		dots: true,
-		infinite: true,
-		speed: 500,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		autoplay: true,
-		autoplaySpeed: 3000,
-	};
+	// const settings2 = {
+	// 	dots: true,
+	// 	infinite: true,
+	// 	speed: 500,
+	// 	slidesToShow: 1,
+	// 	slidesToScroll: 1,
+	// 	autoplay: true,
+	// 	autoplaySpeed: 3000,
+	// };
 
 	useEffect(() => {
 		window.scrollTo(0, 0);

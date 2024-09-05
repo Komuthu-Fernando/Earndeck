@@ -107,7 +107,7 @@ const AboutusPage = () => {
 				</div>
 			</div>
 			<div className='values-section'>
-				<h2>Our values as Marine Surveying & Consultation</h2>
+				<h2>Our Values as Marine Surveying & Consultation</h2>
 				<div className='values-container'>
 					<div className='value'>
 						<img src="" alt="" className='icon'/>

@@ -11,6 +11,10 @@
   flex-direction: column;
 }
 
+.license {
+  width: 15vw;
+}
+
 .sb__footer-links {
   display: flex;
   justify-content: space-between;
@@ -48,22 +52,19 @@ a {
 .socialmedia {
   display: flex;
   flex-direction: row;
-  padding: 1rem;
+  gap: 2rem;
 }
 
 .socialmedia_icon {
-  width: 90%;
-  padding: 1rem;
-  margin-top: -2rem;
+  gap: 1rem;
 }
 
-.footer h4 {
+.sb__footer h4 {
   color: white;
   text-align: center;
 }
 
 .span {
-  color: white;
   text-align: center;
   font-size: small;
 }
@@ -85,8 +86,86 @@ a {
   text-align: left;
 } */
 
+.modal-heading {
+  color: black;
+}
+
+.modal-definitions {
+  margin: 1rem;
+}
+
+.modal-term-title {
+  font-weight: bold;
+  text-align: left;
+}
+
+.modal-term-description {
+  margin-bottom: 15px;
+  line-height: 1.6; 
+  text-align: justify; 
+}
+
+.modal-overlay {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; 
+}
+
+.modal-content-footer {
+  background: #fff;
+  padding: 20px; 
+  border-radius: 1rem; 
+  max-width: 500px; 
+  width: 90%; 
+  max-height: 80vh; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  position: relative; 
+  overflow-y: auto; 
+  overflow-x: hidden; 
+}
+
+.modal-close {
+  position: absolute; 
+  top: 30px;
+  right: 10px;
+  color: rgb(255, 255, 255);
+  background-color: #073859;
+  border: none; 
+  border-radius: 0.5rem;
+  font-size: 24px; 
+  cursor: pointer; 
+}
+
+
+.modal-body {
+  margin-top: 20px; 
+}
+
+.policy-link {
+  cursor: pointer; 
+  font-size: small;
+  text-align: right;
+  margin: 5px 0; 
+}
+
+.footer-policies {
+  margin-top: 20px; 
+}
+
 
 @media screen and (max-width: 900px) {
+
+  .license {
+    width: 45vw;
+  }
+
   .socialmedia_icon {
     margin-top: -1rem;
     margin-left: -1rem;
@@ -108,20 +187,14 @@ a {
   .footer_title {
     text-align: center;
   }
-}
-/* 
-@media (max-width: 479px) {
 
-}
+  .modal-content-footer {
+    width: 60%;
+    max-height: 60vh;
+  }
 
-@media (min-width: 480px) and (max-width: 767px) {
-
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-
+  .policy-link {
+    text-align: center;
+  }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
-  
-} */

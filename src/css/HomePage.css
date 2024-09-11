@@ -33,6 +33,7 @@
 	color: white;
 	text-align: left;
 	font-size: 1.2rem;
+	max-width: 50vw;
 }
 
 .landing-image img {
@@ -114,6 +115,10 @@
 	justify-content: space-around;
 }
 
+.service-card-home img {
+	width: 60px;
+}
+
 .service-card-home {
 	flex-basis: calc(20% - 1rem);
 	height: 30vh;
@@ -127,6 +132,7 @@
 	align-items: center;
 	font-weight: bold;
 }
+
 
 .service-card-home button {
 	border: 0;

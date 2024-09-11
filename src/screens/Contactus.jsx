@@ -76,15 +76,7 @@ function ContactusPage() {
           </div>
         </div>
         <br />
-        <p className="paragraph">
-          This is a sample text paragraph This is a sample text<br />
-          paragraph This is a sample text paragraph This is a sample<br />
-          text paragraph
-        </p>
-
-
         <div className="contactContainer">
-
           <div className="contactForm-contact">
             <h2 className="formHeading">Get in Touch</h2>
             <form onSubmit={sendEmail}>
@@ -96,9 +88,8 @@ function ContactusPage() {
               <input type="tel" id="phone" name="phone" required />
               <label htmlFor="inquiry">Inquiry/Message:</label>
               <textarea id="inquiry" name="inquiry" rows="4" cols="50" required></textarea>
-              <center>
                 <button type="submit">Submit</button>
-              </center>
+
             </form>
           </div>
 

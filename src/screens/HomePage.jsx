@@ -1,15 +1,19 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 
 import '../css/HomePage.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-
-
 import LandingImage from '../assets/homeimg.png';
 
-
-import service_icon from '../assets/facebook.png';
+import service_icon1 from '../assets/icon1.png';
+import service_icon2 from '../assets/icon2.png';
+import service_icon3 from '../assets/icon3.png';
+import service_icon4 from '../assets/icon4.png';
+import service_icon5 from '../assets/icon5.png';
+import service_icon6 from '../assets/icon6.png';
+// import service_icon7 from '../assets/icon7.png';
+// import service_icon8 from '../assets/icon8.png';
 
 const HomePage = () => {
 	// const settings = {
@@ -47,18 +51,13 @@ const HomePage = () => {
 								Your One Stop <br /> Surveying Solutions
 							</h1>
 							<p className="landing-paragraph">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-								congue orci ac <br />
-								diam dapibus, ut malesuada nisl aliquet. Fusce non odio vitae
-								sapien eleifend
-								<br />
-								tristique vitae vel purus.Lorem ipsum dolor sit amet,
-								consectetur adipiscing elit.
-								<br />
-								Nullam congue orci ac <br />
+								We are your global partner for marine surveying and consulting.
+								Our seasoned ex-captains and engineers bring a wealth of
+								experience to every project. Let us be your trusted advisor for
+								all your maritime needs
 							</p>
 							<button className="button">
-								<span>Discover Now</span>
+								<span><a href="/services">Discover Now</a></span>
 							</button>
 						</div>
 						<div className="landing-image">
@@ -72,44 +71,45 @@ const HomePage = () => {
 					<h2>OUR SERVICES</h2>
 					<div className="service-cards-home">
 						<div className="service-card-home">
-							<img src={service_icon} alt="" />
+							<img src={service_icon1} alt="" />
 							<p>Bunker Surveys</p>
-							<button>Read more</button>
+							<button> <a href="/services">Read more</a></button>
 						</div>
 						<div className="service-card-home">
-							<img src={service_icon} alt="" />
-							<p>Bunker Surveys</p>
-							<button>Read more</button>
+							<img src={service_icon1} alt="" />
+							<p>Draft Survey</p>
+							<button> <a href="/services">Read more</a></button>
 						</div>
 						<div className="service-card-home">
-							<img src={service_icon} alt="" />
-							<p>Bunker Surveys</p>
-							<button>Read more</button>
+							<img src={service_icon1} alt="" />
+							<p>Off Hire / On Hire Condition Survey
+							</p>
+							<button> <a href="/services">Read more</a></button>
 						</div>
 						<div className="service-card-home">
-							<img src={service_icon} alt="" />
-							<p>Bunker Surveys</p>
-							<button>Read more</button>
+							<img src={service_icon3} alt="" />
+							<p>Cargo surveys</p>
+							<button> <a href="/services">Read more</a></button>
 						</div>
 						<div className="service-card-home">
-							<img src={service_icon} alt="" />
-							<p>Bunker Surveys</p>
-							<button>Read more</button>
+							<img src={service_icon6} alt="" />
+							<p>Internal ISM Audits on Board</p>
+							<button> <a href="/services">Read more</a></button>
 						</div>
 						<div className="service-card-home">
-							<img src={service_icon} alt="" />
-							<p>Bunker Surveys</p>
-							<button>Read more</button>
+							<img src={service_icon2} alt="" />
+							<p>Container Inspections / Reefer Inspections</p>
+							<button> <a href="/services">Read more</a></button>
 						</div>
 						<div className="service-card-home">
-							<img src={service_icon} alt="" />
-							<p>Bunker Surveys</p>
-							<button>Read more</button>
+							<img src={service_icon4} alt="" />
+							<p>Hull and Machinery inspections</p>
+							<button> <a href="/services">Read more</a></button>
 						</div>
 						<div className="service-card-home">
-							<img src={service_icon} alt="" />
-							<p>Bunker Surveys</p>
-							<button>Read more</button>
+							<img src={service_icon5} alt="" />
+							<p>Harmonised Internal Audits</p>
+							<button> <a href="/services">Read more</a></button>
 						</div>
 					</div>
 				</div>

@@ -377,7 +377,9 @@ const Footer = () => {
 						<center>
 							<span className="span">earndeckshipping@gmail.com</span>
 						</center>
-						<span className="span">earndeckshipping@gmail.com</span>
+						<center>
+							<span className="span">earndeckshipping@gmail.com</span>
+						</center>
 					</div>
 					<div className="sb__footer-links-div">
 						<h4>Follow us</h4>

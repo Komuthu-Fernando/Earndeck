@@ -326,7 +326,6 @@ const Footer = () => {
 
 	const companyPolicyContent = (
 		<>
-			<h4>COMPANY POLICY</h4>
 			<p>
 				It is the policy of Earndeck Shipping Pvt. Ltd., to strive to satisfy
 				the requirements of all of our customers, stakeholders and interested
@@ -350,14 +349,16 @@ const Footer = () => {
 			<div className="sb__footer section__padding">
 				<div className="sb__footer-links">
 					<div className="sb__footer-links-div">
-						<h4 className="footer_title" style={{ textAlign: 'left' }}>
+						<h4 className="footer_title">
 							LEADING MARINE
 							<br /> SURVEYING & CONSULTATION
 							<br />
 							IN SRI LANKA
 						</h4>
 						<br />
+						<div className='image-div'>
 						<img src={license} className="license" alt="" />
+						</div>
 					</div>
 					<div className="sb__footer-links-div footer_mid">
 						<FaLocationDot className="reacticon" />
@@ -368,21 +369,23 @@ const Footer = () => {
 					</div>
 					<div className="sb__footer-links-div footer_mid">
 						<FaPhoneAlt className="reacticon" />
-						<h4>Phone</h4>
+						<h4 className="mid_title">Phone</h4>
 						<span className="span">+94 77 308 1208</span>
 					</div>
 					<div className="sb__footer-links-div footer_mid">
 						<MdEmail className="reacticon" />
-						<h4>Email</h4>
+						<h4 className="mid_title">Email</h4>
+						<div className='email-div'>
 						<center>
 							<span className="span">earndeckshipping@gmail.com</span>
 						</center>
-						<center>
-							<span className="span">earndeckshipping@gmail.com</span>
-						</center>
+						</div>
+						{/* <center>
+							<span className="span">earndeckshipping @gmail.com</span>
+						</center> */}
 					</div>
 					<div className="sb__footer-links-div">
-						<h4>Follow us</h4>
+						<h4 className="mid_title">Follow us</h4>
 						<div className="socialmedia">
 							<p>
 								<a href="/" target="_blank" rel="noopener noreferrer">

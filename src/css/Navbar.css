@@ -42,6 +42,7 @@
   color: #76a6d8;
 }
 
+/* Mobile view */
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
@@ -49,7 +50,7 @@
   }
 
   .menu-items {
-    display: none;
+    display: flex;
     flex-direction: column;
     background-color: white;
     position: absolute;
@@ -58,16 +59,19 @@
     right: 0;
     z-index: 1000;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
-    -webkit-transition: 0.4s ease-in-out;
-    transition: 0.9s ease-in-out;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  }
+
+  .menu-items.open {
+    max-height: 500px; /* Adjust based on the content size */
+    opacity: 1;
   }
 
   .menu-items li a {
     color: rgb(0, 0, 0);
-  }
-
-  .menu-items.open {
-    display: flex;
   }
 
   .menu-items li {

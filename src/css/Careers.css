@@ -1,7 +1,7 @@
 .content {
   position: relative;
   color: white;
-  margin-bottom: 5rem;
+  margin: 5rem;
 }
 
 .heading {
@@ -164,11 +164,21 @@ input[type="file"] {
 
 
 @media (max-width: 479px) {
+  .content {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  
   .image {
     width: 100%; 
     object-fit: cover; 
     margin-left: 0; 
   }
+
+  .contentForm {
+    padding: 1rem;
+  }
+
 
   .contactFormCareers {
     width: 90%; 

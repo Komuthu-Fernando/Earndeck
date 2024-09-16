@@ -41,16 +41,6 @@
 	height: auto;
 }
 
-/* .discover-btn {
-  padding: 0.5rem 1rem;
-  font-size: 1.6rem;
-  margin-top: 2rem;
-  background-color: #08385a;
-  color: #fff;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-} */
 
 .button {
 	border-radius: 10px;
@@ -147,65 +137,6 @@
 	background-color: #020538;
 }
 
-/* 
-.partners {
-	text-align: center;
-	margin: 2rem;
-	background-color: #f0f0f0;
-	padding-bottom: 1rem;
-	border-radius: 2rem;
-}
-
-.partners h2 {
-	padding-top: 2rem;
-	color: #08385a;
-}
-
-.slider-div {
-	overflow: hidden;
-	margin-top: 2rem;
-	margin-left: 2rem;
-	margin-right: 2rem;
-}
-
-.partner-logo {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.partner-logo img {
-	max-width: 12vw;
-
-}
-
-.testimonial-section {
-	margin-top: 4rem;
-	margin-bottom: 4rem;
-	margin-left: 2rem;
-	margin-right: 2rem;
-	border-radius: 2rem;
-	padding-top: 1rem;
-	padding-bottom: 1rem;
-	background-color: #f0f0f0;
-}
-
-.testimonial-card {
-	width: 100px;
-}
-
-.testimonial-section h1,
-h2,
-h4 {
-	color: black;
-	text-align: center;
-	margin: 0;
-	padding: 0;
-}
-
-.testimonial-section h2 {
-	margin-bottom: 2rem;
-} */
 
 @media (max-width: 479px) {
 	.landing-text {
@@ -293,6 +224,10 @@ h4 {
 		font-size: 0.9rem;
 		padding: 1.5rem;
 		height: 15vh;
+	}
+
+	.service-card-home img {
+		width: 40px;
 	}
   }
 

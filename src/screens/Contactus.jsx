@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
 import '../css/Contactus.css';
 import { FaMapMarkerAlt, FaPhone, FaEnvelope } from 'react-icons/fa';
@@ -8,6 +8,24 @@ import 'slick-carousel/slick/slick-theme.css';
 function ContactusPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
+  }, []);
+
+  const mapRef = useRef();
+  const [mapLoaded, setMapLoaded] = useState(false);
+
+  useEffect(() => {
+    // Lazy load the map using Intersection Observer
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          setMapLoaded(true);
+          observer.disconnect();  // Stop observing once map is loaded
+        }
+      });
+    });
+    if (mapRef.current) {
+      observer.observe(mapRef.current);
+    }
   }, []);
 
   const sendEmail = (e) => {
@@ -92,18 +110,20 @@ function ContactusPage() {
 
             </form>
           </div>
-
-          <div className="mapLocator">
+          <div className="mapLocator" ref={mapRef}>
+          {mapLoaded ? (
             <iframe
+              title="map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.087446857001!2d79.9224079!3d6.8527431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2511e7faf2ca5%3A0xf5d0a37d88161258!2sEarndeck%20Shipping%20(Pvt)%20Ltd!5e0!3m2!1sen!2sus!4v1625514475096!5m2!1sen!2sus"
               width="600"
               height="450"
               style={{ border: 0 }}
               allowFullScreen=""
-              loading="lazy"
-              title='map'
             ></iframe>
-          </div>
+          ) : (
+            <p>Loading map...</p> // Placeholder until the map is loaded
+          )}
+        </div>
         </div>
       </div>
     </div>

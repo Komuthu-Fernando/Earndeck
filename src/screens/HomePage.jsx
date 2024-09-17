@@ -54,36 +54,36 @@ const HomePage = () => {
 					<h2>OUR SERVICES</h2>
 					<div className="service-cards-home">
 						<div className="service-card-home">
-							<img src={service_icon1} alt="" />
+							<img src={service_icon1} alt="" loading="lazy"/>
 							<p>Bunker Surveys</p>
 						</div>
 						<div className="service-card-home">
-							<img src={service_icon1} alt="" />
+							<img src={service_icon1} alt="" loading="lazy"/>
 							<p>Draft Survey</p>
 						</div>
 						<div className="service-card-home">
-							<img src={service_icon1} alt="" />
+							<img src={service_icon1} alt="" loading="lazy"/>
 							<p>Off Hire / On Hire <br />Condition Survey
 							</p>
 						</div>
 						<div className="service-card-home">
-							<img src={service_icon3} alt="" />
+							<img src={service_icon3} alt="" loading="lazy"/>
 							<p>Cargo surveys</p>
 						</div>
 						<div className="service-card-home">
-							<img src={service_icon6} alt="" />
+							<img src={service_icon6} alt="" loading="lazy"/>
 							<p>Internal ISM Audits on Board</p>
 						</div>
 						<div className="service-card-home">
-							<img src={service_icon2} alt="" />
+							<img src={service_icon2} alt="" loading="lazy"/>
 							<p>Container Inspections / Reefer Inspections</p>
 						</div>
 						<div className="service-card-home">
-							<img src={service_icon4} alt="" />
+							<img src={service_icon4} alt="" loading="lazy"/>
 							<p>Hull and Machinery inspections</p>
 						</div>
 						<div className="service-card-home">
-							<img src={service_icon5} alt="" />
+							<img src={service_icon5} alt="" loading="lazy"/>
 							<p>Harmonised <br />Internal Audits</p>
 						</div>
 					</div>

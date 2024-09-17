@@ -27,7 +27,7 @@ function App() {
 
   return (
     <Router>
-      <div>
+      {/* <div>
         {loading ? (
           <Preloader />
         ) : (
@@ -47,6 +47,23 @@ function App() {
             </Suspense>
           </>
         )}
+      </div> */}
+      <div>
+          <>
+            <Navbar />
+            <FloatingButton />
+            <Suspense fallback={<div>Loading...</div>}> 
+              <Routes>
+                <Route path="/certificates" element={<CertificatePage />} />
+                <Route path="/services" element={<ServicesPage />} />
+                <Route path="/" element={<HomePage />} />
+                <Route path="/aboutus" element={<AboutUsPage />} />
+                <Route path="/contactus" element={<ContactusPage />} />
+                <Route path="/careers" element={<CareersPage />} />
+              </Routes>
+              <Footer />
+            </Suspense>
+          </>
       </div>
     </Router>
   );

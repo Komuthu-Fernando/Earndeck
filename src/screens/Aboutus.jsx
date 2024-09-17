@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import '../css/Aboutus.css';
 import owner from '../assets/owner-image.webp';
 import ship from '../assets/homeimg.webp';
+import icon from '../assets/coreIcon.webp';
 
 const AboutusPage = () => {
 	const teamMembers = [
@@ -134,30 +135,30 @@ const AboutusPage = () => {
 				<h2>Our Values as Marine Surveying & Consultation</h2>
 				<div className="values-container">
 					<div className="value">
-						<img src="" alt="" className="icon" />
+						<img src={icon} alt="icon" className="icon" />
 						<p>The Level of service excellence</p>
 					</div>
 					<div className="value">
-						<img src="" alt="" className="icon" />
+						<img src={icon} alt="icon" className="icon" />
 						<p>Commitment, Compassion, Accountability to each other</p>
 					</div>
 					<div className="value">
-						<img src="" alt="" className="icon" />
+						<img src={icon} alt="icon" className="icon" />
 						<p>Innovation and upgrading of procedures</p>
 					</div>
 					<div className="value">
-						<img src="" alt="" className="icon" />
+						<img src={icon} alt="icon" className="icon" />
 						<p>
 							Equity, Professional integrity, up to date with modern
 							developments
 						</p>
 					</div>
 					<div className="value">
-						<img src="" alt="" className="icon" />
+						<img src={icon} alt="icon" className="icon" />
 						<p>Continually growing to provide a wide sphere of service</p>
 					</div>
 					<div className="value">
-						<img src="" alt="" className="icon" />
+						<img src={icon} alt="icon" className="icon" />
 						<p>Exemplary service is our purpose in the industry</p>
 					</div>
 				</div>

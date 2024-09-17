@@ -17,7 +17,7 @@ function Navbar() {
 	return (
 		<nav className="navbar">
 			<div className="logo">
-				<img src={Logo} alt="Company Logo" />
+			<Link to="/" ><img src={Logo} alt="Company Logo" /></Link>
 			</div>
 			<div className="menu-toggle" onClick={toggleMenu}>
 				<i className={`fas ${isOpen ? 'fa-times' : 'fa-bars'}`}></i>

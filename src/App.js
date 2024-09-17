@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 import FloatingButton from "./components/FloatingButton";
 import Preloader from "./components/Preloader";
 
-
+// Lazy-loaded pages
 const HomePage = React.lazy(() => import("./screens/HomePage"));
 const ServicesPage = React.lazy(() => import("./screens/Services"));
 const CertificatePage = React.lazy(() => import("./screens/Certificates"));
@@ -18,11 +18,20 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false); 
-    }, 3000); 
+    // Preload homepage assets like the landing image
+    const preloadAssets = async () => {
+      const landingImage = new Image();
+      landingImage.src = require("./assets/homeimg.webp");
 
-    return () => clearTimeout(timer); 
+      // Wait until the image is fully loaded
+      landingImage.onload = () => {
+        setTimeout(() => {
+          setLoading(false); // Stop showing preloader
+        }, 3000); // Optional delay for smoother experience
+      };
+    };
+
+    preloadAssets();
   }, []);
 
   return (
@@ -34,7 +43,7 @@ function App() {
           <>
             <Navbar />
             <FloatingButton />
-            <Suspense fallback={<div>Loading...</div>}> 
+            <Suspense fallback={<div>Loading...</div>}>
               <Routes>
                 <Route path="/certificates" element={<CertificatePage />} />
                 <Route path="/services" element={<ServicesPage />} />
@@ -52,7 +61,7 @@ function App() {
           <>
             <Navbar />
             <FloatingButton />
-            <Suspense fallback={<div>Loading...</div>}> 
+            <Suspense fallback={<div>Loading...</div>}>
               <Routes>
                 <Route path="/certificates" element={<CertificatePage />} />
                 <Route path="/services" element={<ServicesPage />} />

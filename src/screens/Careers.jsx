@@ -129,34 +129,34 @@ function CareersPage() {
 			<div className="card3">
 				<Slider {...settings}>
 					<div>
-						<img src={image1} alt="Client 1" className="image" />
+						<img src={image1} alt="Client 1" className="image" loading='lazy'/>
 					</div>
 					<div>
-						<img src={image2} alt="Client 2" className="image" />
+						<img src={image2} alt="Client 2" className="image" loading='lazy'/>
 					</div>
 					<div>
-						<img src={image3} alt="Client 3" className="image" />
+						<img src={image3} alt="Client 3" className="image" loading='lazy'/>
 					</div>
 					<div>
-						<img src={image4} alt="Client 3" className="image" />
+						<img src={image4} alt="Client 3" className="image" loading='lazy'/>
 					</div>
 					<div>
-						<img src={image5} alt="Client 3" className="image" />
+						<img src={image5} alt="Client 3" className="image" loading='lazy'/>
 					</div>
 					<div>
-						<img src={image6} alt="Client 1" className="image" />
+						<img src={image6} alt="Client 1" className="image" loading='lazy'/>
 					</div>
 					<div>
-						<img src={image7} alt="Client 2" className="image" />
+						<img src={image7} alt="Client 2" className="image" loading='lazy'/>
 					</div>
 					<div>
-						<img src={image8} alt="Client 3" className="image" />
+						<img src={image8} alt="Client 3" className="image" loading='lazy'/>
 					</div>
 					<div>
-						<img src={image9} alt="Client 3" className="image" />
+						<img src={image9} alt="Client 3" className="image" loading='lazy'/>
 					</div>
 					<div>
-						<img src={image10} alt="Client 3" className="image" />
+						<img src={image10} alt="Client 3" className="image" loading='lazy'/>
 					</div>
 				</Slider>
 			</div>

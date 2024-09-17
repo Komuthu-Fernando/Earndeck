@@ -37,9 +37,11 @@ const HomePage = () => {
 								experience to every project. Let us be your trusted advisor for
 								all your maritime needs
 							</p>
+							<a href="/services">
 							<button className="button">
-								<span><a href="/services">Discover Now</a></span>
+								<span>Discover Now</span>
 							</button>
+							</a>
 						</div>
 						<div className="landing-image">
 							<img src={LandingImage} alt="landingimg" />
@@ -54,43 +56,35 @@ const HomePage = () => {
 						<div className="service-card-home">
 							<img src={service_icon1} alt="" />
 							<p>Bunker Surveys</p>
-							<button> <a href="/services">Read more</a></button>
 						</div>
 						<div className="service-card-home">
 							<img src={service_icon1} alt="" />
 							<p>Draft Survey</p>
-							<button> <a href="/services">Read more</a></button>
 						</div>
 						<div className="service-card-home">
 							<img src={service_icon1} alt="" />
-							<p>Off Hire / On Hire Condition Survey
+							<p>Off Hire / On Hire <br />Condition Survey
 							</p>
-							<button> <a href="/services">Read more</a></button>
 						</div>
 						<div className="service-card-home">
 							<img src={service_icon3} alt="" />
 							<p>Cargo surveys</p>
-							<button> <a href="/services">Read more</a></button>
 						</div>
 						<div className="service-card-home">
 							<img src={service_icon6} alt="" />
 							<p>Internal ISM Audits on Board</p>
-							<button> <a href="/services">Read more</a></button>
 						</div>
 						<div className="service-card-home">
 							<img src={service_icon2} alt="" />
 							<p>Container Inspections / Reefer Inspections</p>
-							<button> <a href="/services">Read more</a></button>
 						</div>
 						<div className="service-card-home">
 							<img src={service_icon4} alt="" />
 							<p>Hull and Machinery inspections</p>
-							<button> <a href="/services">Read more</a></button>
 						</div>
 						<div className="service-card-home">
 							<img src={service_icon5} alt="" />
-							<p>Harmonised Internal Audits</p>
-							<button> <a href="/services">Read more</a></button>
+							<p>Harmonised <br />Internal Audits</p>
 						</div>
 					</div>
 				</div>

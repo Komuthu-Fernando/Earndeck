@@ -106,7 +106,7 @@
 }
 
 .service-card-home img {
-	width: 60px;
+	width: 50px;
 }
 
 .service-card-home {
@@ -114,28 +114,14 @@
 	height: 30vh;
 	margin: 1rem;
 	margin-bottom: 2rem;
-	background-color: #e3e3e3;
+	background-color: #F5F5F7;
 	border-radius: 10px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	font-weight: bold;
 }
 
-
-.service-card-home button {
-	border: 0;
-	padding: 0.5rem;
-	border-radius: 0.4rem;
-	background-color: #08385a;
-	color: white;
-	cursor: pointer;
-}
-
-.service-card-home button:hover {
-	background-color: #020538;
-}
 
 
 @media (max-width: 479px) {
@@ -167,6 +153,11 @@
 
 	.service-card-home {
 		padding: 1rem;
+		min-height: 25vh;
+	}
+
+	.service-card-home img {
+		width: 35px;
 	}
 }
 
@@ -200,6 +191,10 @@
 	.service-card-home {
 		padding: 1rem;
 		flex-basis: calc(30% - 1rem);
+	}
+
+	.service-card-home img {
+		max-width: 40px;
 	}
   }
 

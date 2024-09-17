@@ -8,7 +8,7 @@ import {
 	faTiktok,
 	faYoutube,
 } from '@fortawesome/free-brands-svg-icons';
-import license from '../assets/license.png';
+import license from '../assets/license.webp';
 import { FaPhoneAlt } from 'react-icons/fa';
 import { FaLocationDot } from 'react-icons/fa6';
 import { MdEmail } from 'react-icons/md';

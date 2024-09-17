@@ -1,7 +1,7 @@
 // Preloader.js
 import React from 'react';
 import '../css/Preloader.css'; 
-import Logo from '../assets/logo.png';
+import Logo from '../assets/logo.webp';
 
 function Preloader() {
   return (

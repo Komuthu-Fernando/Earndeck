@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import '../css/Aboutus.css';
-import owner from '../assets/owner-image.jpg';
-import ship from '../assets/homeimg.png';
+import owner from '../assets/owner-image.webp';
+import ship from '../assets/homeimg.webp';
 
 const AboutusPage = () => {
 	const teamMembers = [

@@ -2,9 +2,10 @@ import React, { useState, useEffect, Suspense } from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 import FloatingButton from "./components/FloatingButton";
 import Preloader from "./components/Preloader";
+
+import "./css/Fallback.css"
 
 // Lazy-loaded pages
 const HomePage = React.lazy(() => import("./screens/HomePage"));
@@ -13,37 +14,37 @@ const CertificatePage = React.lazy(() => import("./screens/Certificates"));
 const ContactusPage = React.lazy(() => import("./screens/Contactus"));
 const CareersPage = React.lazy(() => import("./screens/Careers"));
 const AboutUsPage = React.lazy(() => import("./screens/Aboutus"));
+const Footer = React.lazy(() => import("./components/Footer"));
+
+const FallbackLoader = () => (
+  <div className="fallback-loading">
+    <div className="spinner"></div>
+    <div className="overlay"></div>
+  </div>
+);
 
 function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Preload homepage assets like the landing image
-    const preloadAssets = async () => {
-      const landingImage = new Image();
-      landingImage.src = require("./assets/homeimg.webp");
 
-      // Wait until the image is fully loaded
-      landingImage.onload = () => {
-        setTimeout(() => {
-          setLoading(false); // Stop showing preloader
-        }, 3000); // Optional delay for smoother experience
-      };
-    };
+    const timeout = setTimeout(() => {
+      setLoading(false); 
+    }, 3000); 
 
-    preloadAssets();
+    return () => clearTimeout(timeout); 
   }, []);
 
   return (
     <Router>
-      {/* <div>
+      <div>
         {loading ? (
           <Preloader />
         ) : (
           <>
+            <Suspense fallback={<FallbackLoader />}>
             <Navbar />
             <FloatingButton />
-            <Suspense fallback={<div>Loading...</div>}>
               <Routes>
                 <Route path="/certificates" element={<CertificatePage />} />
                 <Route path="/services" element={<ServicesPage />} />
@@ -56,23 +57,6 @@ function App() {
             </Suspense>
           </>
         )}
-      </div> */}
-      <div>
-          <>
-            <Navbar />
-            <FloatingButton />
-            <Suspense fallback={<div>Loading...</div>}>
-              <Routes>
-                <Route path="/certificates" element={<CertificatePage />} />
-                <Route path="/services" element={<ServicesPage />} />
-                <Route path="/" element={<HomePage />} />
-                <Route path="/aboutus" element={<AboutUsPage />} />
-                <Route path="/contactus" element={<ContactusPage />} />
-                <Route path="/careers" element={<CareersPage />} />
-              </Routes>
-              <Footer />
-            </Suspense>
-          </>
       </div>
     </Router>
   );

@@ -3,6 +3,40 @@ import { client } from '../constraint/contentful';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import '../css/ServicesPage.css';
 
+const ServiceCard = React.memo(({ service, index }) => (
+  <div>
+    <div className={`service-card ${index % 2 === 0 ? 'left-card' : 'right-card'}`}>
+      {index % 2 === 0 ? (
+        <>
+          <img
+            src={service.fields.image.fields.file.url}
+            alt={service.fields.title}
+            className="service-image"
+            loading="lazy"
+          />
+          <div className="service-text">
+            <h3>{service.fields.title}</h3>
+            <p>{documentToReactComponents(service.fields.description)}</p>
+          </div>
+        </>
+      ) : (
+        <>
+          <div className="service-text">
+            <h3>{service.fields.title}</h3>
+            <p>{documentToReactComponents(service.fields.description)}</p>
+          </div>
+          <img
+            src={service.fields.image.fields.file.url}
+            alt={service.fields.title}
+            className="service-image"
+            loading="lazy"
+          />
+        </>
+      )}
+    </div>
+  </div>
+));
+
 const ServicesPage = () => {
   const [services, setServices] = useState([]);
 
@@ -27,35 +61,7 @@ const ServicesPage = () => {
       <h2>Our Services</h2>
       <div className="service-container">
         {services.map((service, index) => (
-          <div key={index}>
-            <div className={`service-card ${index % 2 === 0 ? 'left-card' : 'right-card'}`}>
-              {index % 2 === 0 ? (
-                <>
-                  <img
-                    src={service.fields.image.fields.file.url}
-                    alt={service.fields.title}
-                    className="service-image"
-                  />
-                  <div className="service-text">
-                    <h3>{service.fields.title}</h3>
-                    <p>{documentToReactComponents(service.fields.description)}</p>
-                  </div>
-                </>
-              ) : (
-                <>
-                  <div className="service-text">
-                    <h3>{service.fields.title}</h3>
-                    <p>{documentToReactComponents(service.fields.description)}</p>
-                  </div>
-                  <img
-                    src={service.fields.image.fields.file.url}
-                    alt={service.fields.title}
-                    className="service-image"
-                  />
-                </>
-              )}
-            </div>
-          </div>
+          <ServiceCard key={index} service={service} index={index} />
         ))}
       </div>
     </div>

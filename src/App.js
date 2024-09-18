@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar";
 import FloatingButton from "./components/FloatingButton";
 import Preloader from "./components/Preloader";
 
-import "./css/Fallback.css"
+import "./css/Fallback.css" 
 
 // Lazy-loaded pages
 const HomePage = React.lazy(() => import("./screens/HomePage"));

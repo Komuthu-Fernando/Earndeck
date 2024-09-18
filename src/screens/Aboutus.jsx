@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import '../css/Aboutus.css';
 import owner from '../assets/owner-image.webp';
-import ship from '../assets/homeimg.webp';
+// import ship from '../assets/homeimg.webp';
 import icon from '../assets/coreIcon.webp';
 
 const AboutusPage = () => {
@@ -67,7 +67,7 @@ const AboutusPage = () => {
 					</p>
 				</div>
 				<div className="second-section">
-					<img src={ship} alt="ship" className="header-img" />
+					<img src="https://res.cloudinary.com/dapi7sixh/image/upload/v1726655643/rhqyxb9mg9vr1bl7mmgp.webp" alt="ship" className="header-img" />
 				</div>
 			</div>
 			<div className="content-section">

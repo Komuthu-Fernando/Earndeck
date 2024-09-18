@@ -171,17 +171,18 @@ function CareersPage() {
 				<div className="contactFormCareers">
 					<form ref={formRef} onSubmit={handleSubmit}>
 						<label htmlFor="name">Name:</label>
-						<input type="text" id="name" name="name" />
+						<input type="text" id="name" name="name"  required="true"/>
 						<label htmlFor="email">Email:</label>
-						<input type="email" id="email" name="email" />
+						<input type="email" id="email" name="email" required="true"/>
 						<label htmlFor="phone">Phone Number:</label>
-						<input type="tel" id="phone" name="phone" />
+						<input type="tel" id="phone" name="phone" required="true"/>
 						<label htmlFor="inquiry">Upload your CV:</label>
 						<input
 							type="file"
 							accept=".pdf,.doc,.docx"
 							className="textarea"
 							onChange={handleFileChange}
+							required="true"
 						/>
 						<button type="submit">Submit</button>
 						{uploadProgress > 0 && (

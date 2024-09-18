@@ -1,31 +1,45 @@
 .floating-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #1a5c89;
-    color: white;
-    padding: 15px 20px;
-    border-radius: 50px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    z-index: 1;
-  }
-  
-  .floating-button:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
-  }
-  
-  .floating-button:active {
-    background-color: #003f7f;
-  }
-  
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #1a5c89;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  @media screen and (max-width: 900px) {
-    .floating-button {
-      font-size: small;
-      padding: 10px 10px;
-    }
+.email-icon {
+  margin-right: 10px;
+}
+
+.floating-button:hover {
+  background-color: #004a99;
+  transform: scale(1.05);
+}
+
+.floating-button:active {
+  background-color: #003f7f;
+}
+
+@media screen and (max-width: 900px) {
+  .floating-button {
+      padding: 12px;
   }
+
+  .email-icon {
+      margin-right: 0;
+      font-size: 1.2rem;
+  }
+
+  .floating-button-text {
+      display: none;
+  }
+}

@@ -59,12 +59,9 @@
 
 .contactFormCareers {
   margin-bottom: 20px;
-  width: 30vw;
-  /* padding: 3rem; */
-  border-radius: 1rem;
   margin-left: auto;
   margin-right: auto;
-  /* background-color: #F0F0F0; */
+
 }
 
 .formHeading {
@@ -82,7 +79,7 @@ input[type="text"],
 input[type="email"],
 input[type="tel"],
 input[type="file"] {
-  width: 100%;
+  width: 97%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -93,7 +90,7 @@ input[type="file"] {
 .contactFormCareers button[type="submit"] {
   background-color: #08385a;
   padding: 10px;
-  width: 105%;
+  width: 100%;
   color: white;
   border: none;
   font-size: 18px;
@@ -177,16 +174,16 @@ input[type="file"] {
 
   .contentForm {
     padding: 1rem;
+    background-color: white;
   }
 
-
   .contactFormCareers {
-    width: 90%; 
-    padding: 1rem; 
+    width: 80%; 
+    
   }
 
   .contactFormCareers button[type="submit"] {
-    width: 90%;
+    width: 100%;
     align-items: center;
     margin-left: 0;
   }
@@ -198,8 +195,14 @@ input[type="file"] {
     object-fit: cover; 
   }
 
+  .contentForm {
+    padding: 1rem;
+    background-color: white;
+  }
+
   .contactFormCareers {
     width: 80%; /* Adjust form width */
+    
   }
 
   .contactFormCareers button[type="submit"] {

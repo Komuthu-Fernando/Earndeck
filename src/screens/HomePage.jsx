@@ -16,24 +16,11 @@ import service_icon6 from '../assets/icon6.webp';
 
 const HomePage = () => {
 
-	const [imageLoaded, setImageLoaded] = useState(false);
-
   useEffect(() => {
     window.scrollTo(0, 0);
 
-    // Preload landing image
-    const img = new Image();
-    img.src = LandingImage;
-
-    img.onload = () => {
-      setImageLoaded(true); // Set state to true when image is loaded
-    };
   }, []);
 
-  // Show loading placeholder while image is loading
-  if (!imageLoaded) {
-    return <div className="image-loading-placeholder">Loading...</div>;
-  }
 	return (
 		<div>
 			<div className="home">

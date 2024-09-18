@@ -129,13 +129,13 @@ function CareersPage() {
 			<div className="card3">
 				<Slider {...settings}>
 					<div>
-						<img src='https://res.cloudinary.com/dapi7sixh/image/upload/v1726656183/cnixdfiy8qtkyti2afhd.webp' alt="Client 1" className="image" loading='lazy'/>
+						<img src='https://res.cloudinary.com/dapi7sixh/image/upload/v1726656183/cnixdfiy8qtkyti2afhd.webp' alt="Client 1" className="image" />
 					</div>
 					<div>
-						<img src='https://res.cloudinary.com/dapi7sixh/image/upload/v1726656183/gunidichh0layjux8lxg.webp' alt="Client 2" className="image" loading='lazy'/>
+						<img src='https://res.cloudinary.com/dapi7sixh/image/upload/v1726656183/gunidichh0layjux8lxg.webp' alt="Client 2" className="image"/>
 					</div>
 					<div>
-						<img src='https://res.cloudinary.com/dapi7sixh/image/upload/v1726656183/vklye5gdcdr7tqzrrgfq.webp' alt="Client 3" className="image" loading='lazy'/>
+						<img src='https://res.cloudinary.com/dapi7sixh/image/upload/v1726656183/vklye5gdcdr7tqzrrgfq.webp' alt="Client 3" className="image"/>
 					</div>
 					<div>
 						<img src='https://res.cloudinary.com/dapi7sixh/image/upload/v1726656183/ghiesqplkvlejyka3s8p.webp' alt="Client 3" className="image" loading='lazy'/>

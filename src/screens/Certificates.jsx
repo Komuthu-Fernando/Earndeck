@@ -9,32 +9,23 @@ const CertificatePage = () => {
 	const [licenses, setLicenses] = useState([]);
 
 	useEffect(() => {
-		const fetchCertificates = async () => {
-			try {
-				const response = await client.getEntries({
-					content_type: 'certificates',
-				});
-				setCertificates(response.items);
-			} catch (error) {
-				console.error('Error fetching certificates from Contentful:', error);
-			}
+		const fetchData = async () => {
+		  try {
+			const [certResponse, licenseResponse] = await Promise.all([
+			  client.getEntries({ content_type: 'certificates' }),
+			  client.getEntries({ content_type: 'licenses' }),
+			]);
+			setCertificates(certResponse.items);
+			setLicenses(licenseResponse.items);
+		  } catch (error) {
+			console.error('Error fetching data from Contentful:', error);
+		  }
 		};
-
-		const fetchLicenses = async () => {
-			try {
-				const response = await client.getEntries({
-					content_type: 'licenses',
-				});
-				setLicenses(response.items);
-			} catch (error) {
-				console.error('Error fetching licenses from Contentful:', error);
-			}
-		};
-
-		fetchCertificates();
-		fetchLicenses();
+	  
+		fetchData();
 		window.scrollTo(0, 0);
-	}, []);
+	  }, []);
+	  
 
 	return (
 		<div className="certificate-container">

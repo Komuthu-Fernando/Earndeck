@@ -3,7 +3,7 @@ import '../css/HomePage.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-import LandingImage from '../assets/homeimg.webp';
+// import LandingImage from '../assets/homeimg.webp';
 
 import service_icon1 from '../assets/icon1.webp';
 import service_icon2 from '../assets/icon2.webp';
@@ -44,7 +44,7 @@ const HomePage = () => {
 							</a>
 						</div>
 						<div className="landing-image">
-							<img src={LandingImage} alt="landingimg" />
+							<img src="https://res.cloudinary.com/dapi7sixh/image/upload/v1726655643/rhqyxb9mg9vr1bl7mmgp.webp" alt="landingimg" />
 						</div>
 					</div>
 				</div>

@@ -1,37 +1,9 @@
 import React, { useEffect } from 'react';
 import '../css/Aboutus.css';
 import owner from '../assets/owner-image.webp';
-// import ship from '../assets/homeimg.webp';
 import icon from '../assets/coreIcon.webp';
 
 const AboutusPage = () => {
-	const teamMembers = [
-		{
-			name: 'John Doe',
-			position: 'Software Engineer',
-			photo: 'https://via.placeholder.com/150',
-		},
-		{
-			name: 'Jane Smith',
-			position: 'Product Manager',
-			photo: 'https://via.placeholder.com/150',
-		},
-		{
-			name: 'Mike Johnson',
-			position: 'Designer',
-			photo: 'https://via.placeholder.com/150',
-		},
-		{
-			name: 'Emily Davis',
-			position: 'Marketing Specialist',
-			photo: 'https://via.placeholder.com/150',
-		},
-		{
-			name: 'Chris Brown',
-			position: 'Data Scientist',
-			photo: 'https://via.placeholder.com/150',
-		},
-	];
 
 	useEffect(() => {
 		window.scrollTo(0, 0);
@@ -67,7 +39,7 @@ const AboutusPage = () => {
 					</p>
 				</div>
 				<div className="second-section">
-					<img src="https://res.cloudinary.com/dapi7sixh/image/upload/v1726655643/rhqyxb9mg9vr1bl7mmgp.webp" alt="ship" className="header-img" />
+					<img src="https://res.cloudinary.com/dapi7sixh/image/upload/v1726750125/wo12yk143tparhzkilho.webp" alt="ship" className="header-img" loading="lazy"/>
 				</div>
 			</div>
 			<div className="content-section">

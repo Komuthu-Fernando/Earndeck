@@ -5,6 +5,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+::selection {
+  background: #065990;
+  color: #ffffff;
+}
+
 /* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

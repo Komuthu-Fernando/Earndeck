@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { client } from '../constraint/contentful';
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import '../css/Certificate.css';
 
 

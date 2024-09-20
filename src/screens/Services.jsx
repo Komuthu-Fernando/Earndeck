@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import Skeleton from 'react-loading-skeleton';
+import 'react-loading-skeleton/dist/skeleton.css';
 import { client } from '../constraint/contentful';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import '../css/ServicesPage.css';
@@ -37,8 +39,33 @@ const ServiceCard = React.memo(({ service, index }) => (
   </div>
 ));
 
+const ServiceCardSkeleton = ({ index }) => (
+  <div>
+    <div className={`service-card ${index % 2 === 0 ? 'left-card' : 'right-card'}`}>
+      {index % 2 === 0 ? (
+        <>
+          <Skeleton height={250} width={150} className="service-image" />
+          <div className="service-text">
+            <h3><Skeleton width={100} /></h3>
+            <p><Skeleton count={5} /></p>
+          </div>
+        </>
+      ) : (
+        <>
+          <div className="service-text">
+            <h3><Skeleton width={100} /></h3>
+            <p><Skeleton count={5} /></p>
+          </div>
+          <Skeleton height={250} width={150} className="service-image" />
+        </>
+      )}
+    </div>
+  </div>
+);
+
 const ServicesPage = () => {
   const [services, setServices] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -49,6 +76,8 @@ const ServicesPage = () => {
         setServices(response.items);
       } catch (error) {
         console.error('Error fetching data from Contentful:', error);
+      } finally {
+        setLoading(false);
       }
     };
 
@@ -60,9 +89,11 @@ const ServicesPage = () => {
     <div className="service">
       <h2>Our Services</h2>
       <div className="service-container">
-        {services.map((service, index) => (
-          <ServiceCard key={index} service={service} index={index} />
-        ))}
+        {loading
+          ? Array(3).fill().map((_, index) => <ServiceCardSkeleton key={index} index={index} />)
+          : services.map((service, index) => (
+              <ServiceCard key={index} service={service} index={index} />
+            ))}
       </div>
     </div>
   );

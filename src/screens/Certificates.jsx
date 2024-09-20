@@ -1,17 +1,19 @@
 import React, { useEffect, useState } from 'react';
-import Skeleton from 'react-loading-skeleton';
+import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
 import { client } from '../constraint/contentful';
 import '../css/Certificate.css';
 
 const CertificateSkeleton = () => (
   <div className="certificate">
-    <Skeleton height={250} width={250} />
+    <SkeletonTheme baseColor="#f2f2f2" highlightColor="#cccccc">
+    <Skeleton height={150} width={350} />
     <div className="certificate-text">
+      <h4><Skeleton width={200} /></h4>
       <h4><Skeleton width={100} /></h4>
-      <h4><Skeleton width={80} /></h4>
       <h4><Skeleton width={100} /></h4>
     </div>
+    </SkeletonTheme>
   </div>
 );
 
@@ -53,6 +55,7 @@ const CertificatePage = () => {
                 <img
                   src={certificate.fields.image.fields.file.url}
                   alt={certificate.fields.title}
+                  loading='lazy'
                 />
                 <div className="certificate-text">
                   <h4>{certificate.fields.title}</h4>
@@ -72,6 +75,7 @@ const CertificatePage = () => {
                 <img
                   src={license.fields.image.fields.file.url}
                   alt={license.fields.title}
+                  loading='lazy'
                 />
                 <div className="certificate-text">
                   <h4>{license.fields.title}</h4>

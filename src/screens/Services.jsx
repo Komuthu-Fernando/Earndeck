@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Skeleton from 'react-loading-skeleton';
+import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
 import { client } from '../constraint/contentful';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
@@ -44,11 +44,13 @@ const ServiceCardSkeleton = ({ index }) => (
     <div className={`service-card ${index % 2 === 0 ? 'left-card' : 'right-card'}`}>
       {index % 2 === 0 ? (
         <>
+        <SkeletonTheme baseColor="#f2f2f2" highlightColor="#cccccc">
           <Skeleton height={250} width={150} className="service-image" />
           <div className="service-text">
             <h3><Skeleton width={100} /></h3>
-            <p><Skeleton count={5} /></p>
+            <p><Skeleton width={200} count={5} /></p>
           </div>
+          </SkeletonTheme>
         </>
       ) : (
         <>

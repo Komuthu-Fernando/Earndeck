@@ -1,5 +1,7 @@
 import React, { useState, useEffect, Suspense } from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { SpeedInsights } from "@vercel/speed-insights/react"
+import { Analytics } from "@vercel/analytics/react"
 
 import Navbar from "./components/Navbar";
 import FloatingButton from "./components/FloatingButton";
@@ -54,6 +56,8 @@ function App() {
                 <Route path="/careers" element={<CareersPage />} />
               </Routes>
               <Footer />
+              <SpeedInsights />
+              <Analytics />
             </Suspense>
           </>
         )}
@@ -72,6 +76,8 @@ function App() {
                 <Route path="/careers" element={<CareersPage />} />
               </Routes>
               <Footer />
+              <SpeedInsights />
+              <Analytics />
             </Suspense>
           </>
       </div>

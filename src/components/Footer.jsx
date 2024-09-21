@@ -376,7 +376,7 @@ const Footer = () => {
 						<h4 className="mid_title">Email</h4>
 						<div className='email-div'>
 						<center>
-							<span className="span">earndeckshipping@gmail.com</span>
+						<a href="mailto:earndeckshipping@gmail.com"><span className="span">earndeckshipping@gmail.com</span></a>
 						</center>
 						</div>
 						{/* <center>
@@ -442,8 +442,8 @@ const Footer = () => {
 			</div>
 			<div className="sb__footer-below">
 				<div className="sb__footer-copyright">
-					<span className="copyright">
-						@{new Date().getFullYear()} <b>Sparkhaus</b>. All Right Reserved.
+					<span className="copyright"> 
+						@{new Date().getFullYear()} <a href="https://www.linkedin.com/company/sparkhausdigital" target="_blank" rel="noopener noreferrer"><b>Sparkhaus</b>.</a> All Right Reserved.
 						<br />
 					</span>
 					<br />

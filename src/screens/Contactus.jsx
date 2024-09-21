@@ -88,7 +88,7 @@ function ContactusPage() {
             <h3 className="title">Email us</h3>
             <p className="text">
               <div className='email-div'>
-              <b>earndeckshipping@gmail.com</b>
+              <p><b>earndeckshipping@gmail.com</b></p>
               </div>
               
             </p>

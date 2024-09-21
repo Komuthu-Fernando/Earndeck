@@ -2,16 +2,6 @@ import React, { useEffect, useState, useRef } from 'react';
 import '../css/Careers.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-// import image1 from 'https://res.cloudinary.com/dapi7sixh/image/upload/v1726656183/cnixdfiy8qtkyti2afhd.webp';
-// import image2 from 'https://res.cloudinary.com/dapi7sixh/image/upload/v1726656183/gunidichh0layjux8lxg.webp';
-// import image3 from 'https://res.cloudinary.com/dapi7sixh/image/upload/v1726656183/vklye5gdcdr7tqzrrgfq.webp';
-// import image4 from 'https://res.cloudinary.com/dapi7sixh/image/upload/v1726656183/ghiesqplkvlejyka3s8p.webp';
-// import image5 from 'https://res.cloudinary.com/dapi7sixh/image/upload/v1726656182/ednjg7ondletrytmzrgx.webp';
-// import image6 from 'https://res.cloudinary.com/dapi7sixh/image/upload/v1726656183/rywtowwyg5uxnordm8y4.webp';
-// import image7 from 'https://res.cloudinary.com/dapi7sixh/image/upload/v1726656183/lbi5ej3e8jdwm3atf2gx.webp';
-// import image8 from 'https://res.cloudinary.com/dapi7sixh/image/upload/v1726656184/wcqrkkxxn8pkmouhk3xm.webp';
-// import image9 from 'https://res.cloudinary.com/dapi7sixh/image/upload/v1726656184/v5pboeksz33zltv4yhkd.webp';
-// import image10 from 'https://res.cloudinary.com/dapi7sixh/image/upload/v1726656184/o5k4vi6qfuebks9h7g9x.webp';
 import Slider from 'react-slick';
 import emailjs from 'emailjs-com';
 import { storage } from '../constraint/firebase';
@@ -146,9 +136,9 @@ function CareersPage() {
 					<div>
 						<img src='https://res.cloudinary.com/dapi7sixh/image/upload/v1726656183/rywtowwyg5uxnordm8y4.webp' alt="Client 1" className="image" loading='lazy'/>
 					</div>
-					<div>
+					{/* <div>
 						<img src='https://res.cloudinary.com/dapi7sixh/image/upload/v1726656183/lbi5ej3e8jdwm3atf2gx.webp' alt="Client 2" className="image" loading='lazy'/>
-					</div>
+					</div> */}
 					<div>
 						<img src='https://res.cloudinary.com/dapi7sixh/image/upload/v1726656184/wcqrkkxxn8pkmouhk3xm.webp' alt="Client 3" className="image" loading='lazy'/>
 					</div>

@@ -76,9 +76,9 @@ function App() {
                 <Route path="/careers" element={<CareersPage />} />
               </Routes>
               <Footer />
-              <SpeedInsights />
-              <Analytics />
             </Suspense>
+            <SpeedInsights />
+            <Analytics />
           </>
       </div>
     </Router>

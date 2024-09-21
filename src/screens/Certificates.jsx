@@ -33,12 +33,12 @@ const CertificateItem = ({ certificate }) => {
         alt={certificate.fields.title}
         style={{ display: imageLoaded ? 'block' : 'none' }} 
         onLoad={() => setImageLoaded(true)} 
+        loading='lazy'
       />
 
       <div className="certificate-text">
         <h4>{certificate.fields.title}</h4>
-        <h4>Date Earned</h4>
-        <h4>{certificate.fields.date}</h4>
+        <h5 className='date'>Date Earned: {certificate.fields.date}</h5>
       </div>
     </div>
   );
@@ -99,11 +99,11 @@ const CertificatePage = () => {
                   src={license.fields.image.fields.file.url}
                   alt={license.fields.title}
                   style={{ display: 'block' }} 
+                  loading='lazy'
                 />
                 <div className="certificate-text">
                   <h4>{license.fields.title}</h4>
-                  <h4>Date Earned</h4>
-                  <h4>{license.fields.earnedDate}</h4>
+                  <h5 className='date'>Date Earned: {license.fields.earnedDate}</h5>
                   {/* <h4>Valid Till - {license.fields.expireDate}</h4> */}
                 </div>
               </div>

@@ -36,8 +36,13 @@
 }
 
 .certificate h4 {
-    text-align: left;
+    text-align: center;
     
+}
+
+.date {
+    color: rgb(164, 164, 164);
+    text-align: center;
 }
 
 .certificate-text {

@@ -87,7 +87,10 @@ function ContactusPage() {
             <FaEnvelope className="icon" />
             <h3 className="title">Email us</h3>
             <p className="text">
+              <div className='email-div'>
               <b>earndeckshipping@gmail.com</b>
+              </div>
+              
             </p>
             <br />
             <p className="text">Submit an email and we will get back to you soon</p>

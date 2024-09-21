@@ -6,7 +6,7 @@ import '../css/Certificate.css';
 
 const CertificateSkeleton = () => (
   <div className="certificate">
-    <SkeletonTheme baseColor="#f2f2f2" highlightColor="#cccccc">
+    <SkeletonTheme baseColor="#f2f2f2" highlightColor="#e6e6e6">
       <Skeleton height={150} width={250} />
       <div className="certificate-text">
         <h4><Skeleton width={150} /></h4>
@@ -23,7 +23,7 @@ const CertificateItem = ({ certificate }) => {
   return (
     <div className="certificate">
       {!imageLoaded && (
-        <SkeletonTheme baseColor="#f2f2f2" highlightColor="#cccccc">
+        <SkeletonTheme baseColor="#f2f2f2" highlightColor="#e6e6e6">
           <Skeleton height={150} width={250} />
         </SkeletonTheme>
       )}
@@ -33,7 +33,6 @@ const CertificateItem = ({ certificate }) => {
         alt={certificate.fields.title}
         style={{ display: imageLoaded ? 'block' : 'none' }} 
         onLoad={() => setImageLoaded(true)} 
-        loading='lazy'
       />
 
       <div className="certificate-text">
@@ -99,7 +98,6 @@ const CertificatePage = () => {
                   src={license.fields.image.fields.file.url}
                   alt={license.fields.title}
                   style={{ display: 'block' }} 
-                  loading='lazy'
                 />
                 <div className="certificate-text">
                   <h4>{license.fields.title}</h4>

@@ -54,6 +54,11 @@
   color: black;
 }
 
+.email-div {
+  display: flex;
+  justify-content: center;
+}
+
 .contactContainer {
   display: flex;
   justify-content: space-between;
@@ -171,6 +176,19 @@ textarea {
     width: 100%;
     margin: 0;
   }
+
+  .mapLocator {
+    display: flex;
+    justify-content: center;
+  }
+
+  .mapLocator iframe  {
+    height: 300px;
+  }
+
+  .email-div {
+    font-size: small;
+  }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
@@ -197,6 +215,15 @@ textarea {
   .mapLocator iframe {
     width: 80vw;
     margin: 0;
+  }
+
+  .mapLocator {
+    display: flex;
+    justify-content: center;
+  }
+
+  .mapLocator iframe  {
+    height: 300px;
   }
 }
 

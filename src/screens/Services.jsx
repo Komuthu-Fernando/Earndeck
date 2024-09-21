@@ -14,7 +14,6 @@ const ServiceCard = React.memo(({ service, index }) => (
             src={service.fields.image.fields.file.url}
             alt={service.fields.title}
             className="service-image"
-            loading="lazy"
           />
           <div className="service-text">
             <h3>{service.fields.title}</h3>
@@ -31,7 +30,6 @@ const ServiceCard = React.memo(({ service, index }) => (
             src={service.fields.image.fields.file.url}
             alt={service.fields.title}
             className="service-image"
-            loading="lazy"
           />
         </>
       )}
@@ -47,7 +45,7 @@ const ServiceCardSkeleton = ({ index }) => (
         <SkeletonTheme baseColor="#f2f2f2" highlightColor="#cccccc">
           <Skeleton height={250} width={150} className="service-image" />
           <div className="service-text">
-            <h3><Skeleton width={100} /></h3>
+            <h3><Skeleton width={150} /></h3>
             <p><Skeleton width={200} count={5} /></p>
           </div>
           </SkeletonTheme>

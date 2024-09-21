@@ -7,9 +7,9 @@ import '../css/Certificate.css';
 const CertificateSkeleton = () => (
   <div className="certificate">
     <SkeletonTheme baseColor="#f2f2f2" highlightColor="#cccccc">
-    <Skeleton height={150} width={350} />
+    <Skeleton height={150} width={250} />
     <div className="certificate-text">
-      <h4><Skeleton width={200} /></h4>
+      <h4><Skeleton width={150} /></h4>
       <h4><Skeleton width={100} /></h4>
       <h4><Skeleton width={100} /></h4>
     </div>
@@ -75,7 +75,6 @@ const CertificatePage = () => {
                 <img
                   src={license.fields.image.fields.file.url}
                   alt={license.fields.title}
-                  loading='lazy'
                 />
                 <div className="certificate-text">
                   <h4>{license.fields.title}</h4>

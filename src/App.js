@@ -17,6 +17,7 @@ const ContactusPage = React.lazy(() => import("./screens/Contactus"));
 const CareersPage = React.lazy(() => import("./screens/Careers"));
 const AboutUsPage = React.lazy(() => import("./screens/Aboutus"));
 const Footer = React.lazy(() => import("./components/Footer"));
+const NotFoundPage = React.lazy(() => import("./screens/NotFoundPage"));
 
 const FallbackLoader = () => (
   <div className="fallback-loading">
@@ -54,6 +55,7 @@ function App() {
                 <Route path="/aboutus" element={<AboutUsPage />} />
                 <Route path="/contactus" element={<ContactusPage />} />
                 <Route path="/careers" element={<CareersPage />} />
+                <Route path="*" element={<NotFoundPage />} />
               </Routes>
               <Footer />
               <SpeedInsights />
@@ -74,6 +76,7 @@ function App() {
                 <Route path="/aboutus" element={<AboutUsPage />} />
                 <Route path="/contactus" element={<ContactusPage />} />
                 <Route path="/careers" element={<CareersPage />} />
+                <Route path="*" element={<NotFoundPage />} />
               </Routes>
               <Footer />
             </Suspense>

@@ -6,12 +6,14 @@ import Slider from 'react-slick';
 import emailjs from 'emailjs-com';
 import { storage } from '../constraint/firebase';
 import { ref, uploadBytesResumable, getDownloadURL } from 'firebase/storage';
+import { useNavigate } from 'react-router-dom';
 
 function CareersPage() {
 	const [file, setFile] = useState(null);
 	const [uploadProgress, setUploadProgress] = useState(0);
 	const [showSuccessModal, setShowSuccessModal] = useState(false);
 	const formRef = useRef(null);
+	const navigate = useNavigate();
 
 	useEffect(() => {
 		window.scrollTo(0, 0);
@@ -72,6 +74,7 @@ function CareersPage() {
 			},
 			(error) => {
 				console.error('File upload error:', error);
+				navigate('/404');
 			},
 			() => {
 				getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
@@ -99,6 +102,7 @@ function CareersPage() {
 						})
 						.catch((error) => {
 							console.error('Email sending error:', error);
+							navigate('/404');
 						});
 				});
 			}

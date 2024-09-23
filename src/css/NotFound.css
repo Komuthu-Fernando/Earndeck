@@ -1,0 +1,13 @@
+.notfound {
+    /* min-height: 70vh; */
+    text-align: center;
+    margin: 10rem;
+}
+
+@media (max-width: 768px) {
+    .notfound {
+        margin: 5rem;
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+    }
+}

@@ -46,7 +46,7 @@ const ServiceCardSkeleton = ({ index }) => (
           <Skeleton height={250} width={150} className="service-image" />
           <div className="service-text">
             <h3><Skeleton width={150} /></h3>
-            <p><Skeleton width={200} count={5} /></p>
+            <p><Skeleton width={250} count={5} /></p>
           </div>
           </SkeletonTheme>
         </>

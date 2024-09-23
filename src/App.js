@@ -40,7 +40,7 @@ function App() {
 
   return (
     <Router>
-      {/* <div>
+      <div>
         {loading ? (
           <Preloader />
         ) : (
@@ -63,26 +63,6 @@ function App() {
             </Suspense>
           </>
         )}
-      </div> */}
-      <div>
-          <>
-            <Suspense fallback={<FallbackLoader />}>
-            <Navbar />
-            <FloatingButton />
-              <Routes>
-                <Route path="/certificates" element={<CertificatePage />} />
-                <Route path="/services" element={<ServicesPage />} />
-                <Route path="/" element={<HomePage />} />
-                <Route path="/aboutus" element={<AboutUsPage />} />
-                <Route path="/contactus" element={<ContactusPage />} />
-                <Route path="/careers" element={<CareersPage />} />
-                <Route path="*" element={<NotFoundPage />} />
-              </Routes>
-              <Footer />
-            </Suspense>
-            <SpeedInsights />
-            <Analytics />
-          </>
       </div>
     </Router>
   );

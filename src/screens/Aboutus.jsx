@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import '../css/Aboutus.css';
-import owner from '../assets/owner-image.webp';
 import icon from '../assets/coreIcon.webp';
 
 const AboutusPage = () => {
@@ -39,7 +38,7 @@ const AboutusPage = () => {
 					</p>
 				</div>
 				<div className="second-section">
-					<img src="https://res.cloudinary.com/dapi7sixh/image/upload/v1726750125/wo12yk143tparhzkilho.webp" alt="ship" className="header-img" loading="lazy"/>
+					<img src="https://res.cloudinary.com/dapi7sixh/image/upload/f_auto,q_auto/wo12yk143tparhzkilho" alt="ship" className="header-img" loading="lazy"/>
 				</div>
 			</div>
 			<div className="content-section">
@@ -80,24 +79,24 @@ const AboutusPage = () => {
 				<h2>Our Team</h2>
 				<div className="team-member">
 					<div className="member">
-						<img src={owner} alt="Member 1" />
+						<img src="https://res.cloudinary.com/dapi7sixh/image/upload/f_auto,q_auto/qb4lzw9wvganabpifitx" alt="Member 1" />
 						<h3>G. Thusith Fonseka</h3>
 						<h4>Deputy Principal Marine Surveyor / Managing Director</h4>
 						<h4>Chief Operations Manager Coordinator</h4>
 						<h4>Custom House Agent, ICS Ship Broker</h4>
 					</div>
 					<div className="member">
-						<img src="https://via.placeholder.com/150" alt="Member 1" />
+						<img src="https://res.cloudinary.com/dapi7sixh/image/upload/f_auto,q_auto/whvcckfwzeocdg0yn5l0" alt="Member 1" />
 						<h3>Capt. Ajith U Fernando</h3>
 						<h4>Principal Mariner Surveyor / Director</h4>
 					</div>
 					<div className="member">
-						<img src="https://via.placeholder.com/150" alt="Member 1" />
+						<img src="https://res.cloudinary.com/dapi7sixh/image/upload/f_auto,q_auto/eg5ukmcqkgwsbotxraxt" alt="Member 1" />
 						<h3>G. F. Dias</h3>
 						<h4>Director / Marine Surveyor</h4>
 					</div>
 					<div className="member">
-						<img src="https://via.placeholder.com/150" alt="Member 1" />
+						<img src="https://res.cloudinary.com/dapi7sixh/image/upload/f_auto,q_auto/ovo8ylxz1ubdb1qbommk" alt="Member 1" />
 						<h3>Komuthu Fernando</h3>
 						<h4>IT Specialist</h4>
 					</div>

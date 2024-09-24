@@ -93,8 +93,9 @@
 }
 
 .member img {
-  width: 15vw;
-  height: auto;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
   border-radius: 50%; 
 }
 
@@ -215,7 +216,8 @@
   }
 
   .member img {
-    width: 40vw;
+    width: 200px;
+    height: 200px;
   }
 
   .values-section h2 {
@@ -293,7 +295,8 @@
   }
 
   .member img {
-    width: 25vw;
+    width: 200px;
+    height: 200px;
   }
 
   .values-section h2 {
@@ -330,7 +333,8 @@
   }
 
   .member img {
-    width: 20vw;
+    width: 200px;
+    height: 200px;
   }
 
   .values-section h2 {
@@ -345,8 +349,4 @@
 
   }
   
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-
 }

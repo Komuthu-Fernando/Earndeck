@@ -45,7 +45,7 @@ const HomePage = () => {
 							{/* Conditionally show Skeleton or image */}
 							{!imageLoaded && <Skeleton height={400} width="100%" />}
 							<img
-								src="https://res.cloudinary.com/dapi7sixh/image/upload/v1726655643/rhqyxb9mg9vr1bl7mmgp.webp"
+								src="https://res.cloudinary.com/dapi7sixh/image/upload/f_auto,q_auto/rhqyxb9mg9vr1bl7mmgp"
 								alt="landingimg"
 								onLoad={() => setImageLoaded(true)}
 								style={{ display: imageLoaded ? 'block' : 'none' }}

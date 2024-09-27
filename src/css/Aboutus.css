@@ -77,7 +77,7 @@
 }
 
 .member {
-  width: calc(33.33% - 1rem);
+  width: calc(30% - 1rem);
   text-align: center;
   margin-bottom: 2rem;
 }

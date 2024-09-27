@@ -81,24 +81,35 @@ const AboutusPage = () => {
 					<div className="member">
 						<img src="https://res.cloudinary.com/dapi7sixh/image/upload/f_auto,q_auto/qb4lzw9wvganabpifitx" alt="Member 1" />
 						<h3>G. Thusith Fonseka</h3>
-						<h4>Deputy Principal Marine Surveyor / Managing Director</h4>
+						<h4>Managing Director / Deputy Principal Marine Surveyor </h4>
 						<h4>Chief Operations Manager Coordinator</h4>
 						<h4>Custom House Agent, ICS Ship Broker</h4>
 					</div>
 					<div className="member">
 						<img src="https://res.cloudinary.com/dapi7sixh/image/upload/f_auto,q_auto/whvcckfwzeocdg0yn5l0" alt="Member 1" />
 						<h3>Capt. Ajith U Fernando</h3>
-						<h4>Principal Mariner Surveyor / Director</h4>
+						<h4>Director / Principal Mariner Surveyor</h4>
+						<h4>Chamber of Commerce Panel Surveyor (SL)</h4>
+						<h4>Lead Auditor (ISM, ISPS, MLC) Lloyds Maritime</h4>
+						<h4>Hulls Damage claims Surveying, Bunker, Draught</h4>
+						<h4>IAMCS full Member</h4>
 					</div>
 					<div className="member">
 						<img src="https://res.cloudinary.com/dapi7sixh/image/upload/f_auto,q_auto/eg5ukmcqkgwsbotxraxt" alt="Member 1" />
 						<h3>G. F. Dias</h3>
 						<h4>Director / Marine Surveyor</h4>
+						<h4>Marine Engineer</h4>
+					</div>
+					<div className="member">
+						<img src="https://res.cloudinary.com/dapi7sixh/image/upload/f_auto,q_auto/WhatsApp_Image_2024-09-27_at_12.09.03_497fc16a_zuryxp" alt="Member 1" />
+						<h3>Clishal L. Perera</h3>
+						<h4>Trainer Marine Surveyor</h4>
 					</div>
 					<div className="member">
 						<img src="https://res.cloudinary.com/dapi7sixh/image/upload/f_auto,q_auto/ovo8ylxz1ubdb1qbommk" alt="Member 1" />
 						<h3>Komuthu Fernando</h3>
 						<h4>IT Specialist</h4>
+						<h4>Bsc.(Hons) Information Technology University of Moratuwa</h4>
 					</div>
 				</div>
 			</div>

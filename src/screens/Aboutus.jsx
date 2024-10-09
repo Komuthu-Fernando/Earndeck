@@ -79,14 +79,14 @@ const AboutusPage = () => {
 				<h2>Our Team</h2>
 				<div className="team-member">
 					<div className="member">
-						<img src="https://res.cloudinary.com/dapi7sixh/image/upload/f_auto,q_auto/gctnpr66bbfrnwk0xs55" alt="Member 1" />
+						<img src="https://res.cloudinary.com/dapi7sixh/image/upload/f_auto,q_auto/qjkggu2mtwct2mijlu9z" alt="Member 1" />
 						<h3>G. Thusith Fonseka</h3>
 						<h4>Managing Director / Deputy Principal Marine Surveyor </h4>
 						<h4>Chief Operations Manager Coordinator</h4>
 						<h4>Custom House Agent, ICS Ship Broker</h4>
 					</div>
 					<div className="member">
-						<img src="https://res.cloudinary.com/dapi7sixh/image/upload/f_auto,q_auto/xlrb6xpl2myuahtkjiko" alt="Member 1" />
+						<img src="https://res.cloudinary.com/dapi7sixh/image/upload/f_auto,q_auto/pvhoigyla69wmpijognk" alt="Member 1" />
 						<h3>Capt. Ajith U Fernando</h3>
 						<h4>Director / Principal Mariner Surveyor</h4>
 						<h4>Chamber of Commerce Panel Surveyor (SL)</h4>
@@ -95,18 +95,18 @@ const AboutusPage = () => {
 						<h4>IAMCS full Member</h4>
 					</div>
 					<div className="member">
-						<img src="https://res.cloudinary.com/dapi7sixh/image/upload/f_auto,q_auto/zzqx0b7zvfhkhmwleoqa" alt="Member 1" />
+						<img src="https://res.cloudinary.com/dapi7sixh/image/upload/f_auto,q_auto/eg3yqgzelkmsml0qfwso" alt="Member 1" />
 						<h3>G. F. Dias</h3>
 						<h4>Director / Marine Surveyor</h4>
 						<h4>Marine Engineer</h4>
 					</div>
 					<div className="member">
-						<img src="https://res.cloudinary.com/dapi7sixh/image/upload/f_auto,q_auto/cbwxmnzrrornnsfq91fr" alt="Member 1" />
+						<img src="https://res.cloudinary.com/dapi7sixh/image/upload/f_auto,q_auto/cmqnljpuuhbfupszgsw1" alt="Member 1" />
 						<h3>Clishal L. Perera</h3>
 						<h4>Trainer Marine Surveyor</h4>
 					</div>
 					<div className="member">
-						<img src="https://res.cloudinary.com/dapi7sixh/image/upload/f_auto,q_auto/ewnnj4uaogbzim0qavs0" alt="Member 1" />
+						<img src="https://res.cloudinary.com/dapi7sixh/image/upload/f_auto,q_auto/m72idgb30m4domcjjtms" alt="Member 1" />
 						<h3>Komuthu Fernando</h3>
 						<h4>IT Specialist</h4>
 						<h4>Bsc.(Hons) Information Technology University of Moratuwa</h4>

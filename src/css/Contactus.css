@@ -153,6 +153,10 @@ textarea {
   height: 500px;
 }
 
+.spanContact {
+  color: black;
+}
+
 
 
 @media (max-width: 479px) {

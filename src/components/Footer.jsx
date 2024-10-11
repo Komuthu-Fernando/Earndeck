@@ -376,12 +376,14 @@ const Footer = () => {
 						<h4 className="mid_title">Email</h4>
 						<div className='email-div'>
 						<center>
+						<a href="mailto:ops@earndeckshipping.com"><span className="span">ops@earndeckshipping.com</span></a>
+						</center>
+						</div>
+						<div className='email-div'>
+						<center>
 						<a href="mailto:earndeckshipping@gmail.com"><span className="span">earndeckshipping@gmail.com</span></a>
 						</center>
 						</div>
-						{/* <center>
-							<span className="span">earndeckshipping @gmail.com</span>
-						</center> */}
 					</div>
 					<div className="sb__footer-links-div">
 						<h4 className="mid_title">Follow us</h4>

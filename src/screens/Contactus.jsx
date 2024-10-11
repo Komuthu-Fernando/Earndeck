@@ -81,8 +81,7 @@ function ContactusPage() {
               8.30 a.m - 5.15 p.m
             </p>
           </div>
-
-
+          
           <div className="card">
             <FaEnvelope className="icon" />
             <h3 className="title">Email us</h3>
